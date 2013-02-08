@@ -1,68 +1,78 @@
-polipo Cookbook
-===============
-TODO: Enter the cookbook description here.
+chef-polipo Cookbook
+--------------------
 
-e.g.
-This cookbook makes your favorite breakfast sandwhich.
+[Polipo](http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/) is a "a small and fast caching web proxy"  
+
+This cookbook uses polipo to create an appliance VM for http caching.  
+This can be useful for Vagrant testing if you are having to pull lots of RPMs and get tired of waiting for them to download on every converge.  
+
+You can either use it standalone, or within a chef-repository.  
+It is more convenient within a repo:  
+chef clients with recipe\[polipo::client\_proxy\] in the run list will use HTTP caching.  
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
 
-e.g.
-#### packages
-- `toaster` - polipo needs toaster to brown your bagel.
+Vagrant
+
 
 Attributes
 ----------
-TODO: List you cookbook attributes here.
 
-e.g.
-#### polipo::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['polipo']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+**node["polipo"]["proxy_ipaddress"]**
+
+the polipo::client\_proxy recipe should be added high in the run list of the VM your are testing / converging.  
+Once added it will use the node["polipo"]["proxy_ipaddress"] to set the proxy in /etc/yum.conf
+
+**node["polipo"]["allowed_clients]**
+
+the polipo::default recipe installs polipo to your appliance VM.  
+This VM is setup with networking in bridged mode. 
+The node["polipo"]["allowed_clients] attribute tells polipo who can use it a proxy.  
+This defaults to an RFC-1918 (non routeable) address range.  
+
 
 Usage
 -----
-#### polipo::default
-TODO: Write usage instructions for each cookbook.
 
-e.g.
-Just include `polipo` in your node's `run_list`:
+1. clone the repo:  
+`git clone git@github.com:sandfish8/chef-polipo.git`  
 
-```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[polipo]"
-  ]
-}
-```
+2. rename to polipo:  
+`mv chef-polipo polipo`  
+
+3. Install gems  
+`cd polipo`  
+`bundle install`
+
+4. Before starting the VM, if your ip address is not within a private range, then update the allowed\_client attribute in the Vagrantfile:  
+`:polipo => {
+   :allowed_clients => "YOUR_IP"
+ } `
+
+5. Start the VM  
+`bundle exec vagrant up`
+
+6. ssh into the polipo VM and get it's IP  
+`bundle exec vagrant ssh`  
+`ifconfig`
+
+7. For each node that you'd like to utilize the proxy, you'll need to  
+
+  * set the ipaddress in node["polipo"]["proxy_ipaddress"]
+  * add recipe["polipo"]["proxy\_client"] to it's run list.
+
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
 
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
-3. Write you change
+3. Write your change
 4. Write tests for your change (if applicable)
 5. Run the tests, ensuring they all pass
 6. Submit a Pull Request using Github
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Author: Sam Cooper
