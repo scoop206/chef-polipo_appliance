@@ -74,7 +74,7 @@ Contributing
 License and Authors
 -------------------
 
-Author:: [Sam Cooper][sandfish8] (<sam@chgworks.com>)
+Author: Sam Cooper <sam@chgworks.com.
 
 Copyright:: 2013, [Bluebox](http://bluebox.net)  
 Copyright:: 2013, Sam Cooper
