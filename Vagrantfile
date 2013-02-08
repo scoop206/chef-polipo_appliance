@@ -49,7 +49,11 @@ Vagrant::Config.run do |config|
   config.ssh.timeout   = 120
 
   config.vm.provision :chef_solo do |chef|
-    chef.json = { }
+    chef.json = {
+      :polipo => {
+        :allowed_clients => "192.168.0.0/16, 10.0.0.0/24"
+      }
+    }
 
     chef.run_list = [
       "recipe[polipo::default]"
