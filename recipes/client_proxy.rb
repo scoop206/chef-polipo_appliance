@@ -2,7 +2,7 @@
 # Cookbook Name:: polipo
 # Recipe:: client_proxy
 #
-# Copyright 2013, Bluebox
+# Copyright 2013, Bluebox Inc.
 # Copyright 2013, Sam Cooper <sam@chgworks.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
