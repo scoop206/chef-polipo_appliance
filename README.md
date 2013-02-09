@@ -3,11 +3,11 @@ chef-polipo Cookbook
 
 [Polipo](http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/) is a "a small and fast caching web proxy"  
 
-This cookbook uses polipo to create an appliance VM for http caching.  
-This can be useful for Vagrant testing if you are having to dowload the same RPMs or deb packages repeatedly.
+This cookbook uses polipo to create an appliance VM for local caching of RPM and deb packages.  
+This can save time if you're having to converge multiple times and it's pulling down the same packages again and again.
 
-You can either use it standalone, or within a chef-repository.  
-It is more convenient within a repo, and is even more convenient if you use it with Jamie.  
+You can either use it standalone, or within a chef repository.  
+It is more convenient within a repo, and is even more convenient if you use it with [Jamie](http://github.com/jamie-ci).  
 
 Any chef clients with recipe\[polipo::client\_proxy\] in their run list will proxy their package downloads via the polipo appliance.  
 
@@ -16,7 +16,6 @@ Supported Platforms
 -------------------
 
 The appliance is Ubuntu.  The client_proxy recipe works on Debian and RHEL platorm families.  
-Both RPMs and deb packages seem to cache well via polipo.
 
 Requirements
 ------------
@@ -43,7 +42,7 @@ Installs polipo to your appliance VM.
 
 
 **polipo::client\_proxy**  
-Put this in the run_list of the VMs you want to utilize the polipo proxy for package downloading.
+Configures yum or apt to use polipo for proxying
 
 Usage
 -----
@@ -69,9 +68,9 @@ end
 berks install -o polipo --path test/integration/cookbooks/
 ```
 
-Run the polipo appliance bootstrap script and record the appliance ipaddress it spits out.  
+Run the polipo appliance bootstrap script and record the appliance ipaddress it spits out.  The VM's network runs bridged so you may get asked by Vagrant which network you'd like to bridge to.
 
-Polipo needs to know what ip ranges to accept proxying requests from.  By default, this cookbook sets non-routable ip ranges as accepted.
+Note: Polipo needs to know what ip ranges to accept proxying requests from.  By default, this cookbook sets non-routable ip ranges as accepted.
 If you would like a different range you'll need to modify the default["polipo"]["allowed_clients"] before bootstrapping the appliance.
  
 ```bash
@@ -81,7 +80,10 @@ cd test/integration/cookbooks/polipo
 
 Place the polipo information where your chef clients can get to it.  
 This can be accomplished with either Jamie or Vagrant
-You want each client to have recipe["polipo"]["proxy\_client"] at the top of their run list and node["polipo"]["proxy\_ipaddress"] set to the ip of the appliance.
+
+Each proxy client needs  
+ - recipe["polipo"]["proxy\_client"] at the top of their run list
+ - node["polipo"]["proxy\_ipaddress"] set to the ip of the appliance.
 
 An example .jamie.yml configuraiton
 
