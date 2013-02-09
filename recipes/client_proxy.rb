@@ -24,7 +24,15 @@ when 'rhel', 'fedora'
   template '/etc/yum.conf' do
     source 'proxied_yum.conf'
     mode '0644'
+    variables :proxy => node["polipo"]["proxy_ipaddress"]
   end
 
 when 'debian'
+
+  template '/etc/apt/apt.conf' do
+    source 'proxied_apt.conf'
+    mode '0644'
+    variables :proxy => node["polipo"]["proxy_ipaddress"]    
+  end
+  
 end
