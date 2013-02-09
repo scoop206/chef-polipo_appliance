@@ -21,3 +21,14 @@
 package "polipo" do
   :install
 end
+
+service "polipo" do
+  :nothing
+end
+
+template "/etc/polipo/config" do
+  mode "0644"
+  source "polipo_config"
+  variables :allowed_clients => node["polipo"]["allowed_clients"]
+  notifies :restart, "service[polipo]"
+end
