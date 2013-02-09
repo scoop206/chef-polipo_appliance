@@ -4,11 +4,19 @@ chef-polipo Cookbook
 [Polipo](http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/) is a "a small and fast caching web proxy"  
 
 This cookbook uses polipo to create an appliance VM for http caching.  
-This can be useful for Vagrant testing if you are having to pull lots of RPMs and get tired of waiting for them to download on every converge.  
+This can be useful for Vagrant testing if you are having to dowload the same RPMs or deb packages repeatedly.
 
 You can either use it standalone, or within a chef-repository.  
-It is more convenient within a repo:  
-chef clients with recipe\[polipo::client\_proxy\] in the run list will use HTTP caching.  
+It is more convenient within a repo, and is even more convenient if you use it with Jamie.  
+
+Any chef clients with recipe\[polipo::client\_proxy\] in their run list will proxy their package downloads via the polipo appliance.  
+
+
+Supported Platforms
+-------------------
+
+The appliance is Ubuntu.  The client_proxy recipe works on Debian and RHEL platorm families.  
+Both RPMs and deb packages seem to cache well via polipo.
 
 Requirements
 ------------
@@ -21,47 +29,94 @@ Attributes
 
 **node["polipo"]["proxy_ipaddress"]**
 
-the polipo::client\_proxy recipe should be added high in the run list of the VM your are testing / converging.  
-Once added it will use the node["polipo"]["proxy_ipaddress"] to set the proxy in /etc/yum.conf
+The polipo proxy's ip address
 
-**node["polipo"]["allowed_clients]**
+**node["polipo"]["allowed_clients]**  
+The IP ranges that the polipo appliance will provide caching for.  
+By default the 10.x.x.x and 192.168.x.x non-routable ranges are used.
 
-the polipo::default recipe installs polipo to your appliance VM.  
-This VM is setup with networking in bridged mode. 
-The node["polipo"]["allowed_clients] attribute tells polipo who can use it a proxy.  
-This defaults to an RFC-1918 (non routeable) address range.  
+Recipes
+--------
 
+**polipo::default**  
+Installs polipo to your appliance VM.  
+
+
+**polipo::client\_proxy**  
+Put this in the run_list of the VMs you want to utilize the polipo proxy for package downloading.
 
 Usage
 -----
 
-1. clone the repo:  
-`git clone git@github.com:sandfish8/chef-polipo.git`  
+Get the cookbook
 
-2. rename to polipo:  
-`mv chef-polipo polipo`  
+either clone by hand to a cookbook folder:  
+```bash
+git clone git@github.com:sandfish8/chef-polipo.git
+```
 
-3. Install gems  
-`cd polipo`  
-`bundle install`
+or
 
-4. Before starting the VM, if your ip address is not within a private range, then update the allowed\_clients attribute in the Vagrantfile:  
-`:polipo => {
-   :allowed_clients => "YOUR_IP"
- } `
+add a group entry to your Berksfile and vendor the cookbook  (recommended)  
+  
+```ruby
+group :polipo do
+ cookbook 'polipo', :git => 'git://github.com/sandfish8/chef-polipo.git'
+end
+```
 
-5. Start the VM  
-`bundle exec vagrant up`
+```bash
+berks install -o polipo --path test/integration/cookbooks/
+```
 
-6. ssh into the polipo VM and get it's IP  
-`bundle exec vagrant ssh`  
-`ifconfig`
+Run the polipo appliance bootstrap script and record the appliance ipaddress it spits out.  
 
-7. For each node that you'd like to utilize the proxy, you'll need to  
+Polipo needs to know what ip ranges to accept proxying requests from.  By default, this cookbook sets non-routable ip ranges as accepted.
+If you would like a different range you'll need to modify the default["polipo"]["allowed_clients"] before bootstrapping the appliance.
+ 
+```bash
+cd test/integration/cookbooks/polipo
+./bootstrap.sh
+```
 
-  * set the ipaddress in node["polipo"]["proxy_ipaddress"]
-  * add recipe["polipo"]["proxy\_client"] to it's run list.
+Place the polipo information where your chef clients can get to it.  
+This can be accomplished with either Jamie or Vagrant
+You want each client to have recipe["polipo"]["proxy\_client"] at the top of their run list and node["polipo"]["proxy\_ipaddress"] set to the ip of the appliance.
 
+An example .jamie.yml configuraiton
+
+```yaml
+---
+driver_plugin: vagrant
+platforms:
+- name: ubuntu-12.04
+  driver_config:
+    box: opscode-ubuntu-12.04
+    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box
+  run_list:
+  - recipe[polipo::client_proxy]
+  - recipe[apt]
+- name: centos-6.3
+  driver_config:
+    box: opscode-centos-6.3
+    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-centos-6.3.box
+  run_list:
+  - recipe[polipo::client_proxy]
+  - recipe[yum::epel]
+suites:
+- name: default
+  run_list: []
+  attributes:
+    polipo:
+      proxy_ipaddress: 192.168.0.53
+```
+
+Fire up your test VMs and they should now be using the polipo appliance for caching.
+
+Troubleshooting
+---------------
+
+Since polipo is an HTTP proxy you can test the appliance using your browser.  Use your appliance's IP and target port 8123.
 
 Contributing
 ------------
