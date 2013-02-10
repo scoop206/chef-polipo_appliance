@@ -4,18 +4,22 @@ chef-polipo Cookbook
 [Polipo](http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/) is a "a small and fast caching web proxy"  
 
 This cookbook uses polipo to create an appliance VM for local caching of RPM and deb packages.  
-This can save time when using Vagrant to test and you are converging again and again.
 
 You can either use it standalone, or within a chef repository.  
 It is more convenient within a repo, and is even more convenient if you use it with [Jamie](http://github.com/jamie-ci).  
 
 Any chef clients with recipe\[polipo::client\_proxy\] in their run list will proxy their package downloads via the polipo appliance.  
 
+How much faster is it?
+---------------------
+
+erlang install w/o caching:     83 sec  
+erlang install w/ primed cache: 28 sec
 
 Supported Platforms
 -------------------
 
-The appliance is Ubuntu.  The client_proxy recipe works on Debian and RHEL platorm families.  
+The appliance is Ubuntu.  The client_proxy recipe works on the Debian and RHEL platorm families.  
 
 Requirements
 ------------
