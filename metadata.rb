@@ -1,4 +1,4 @@
-name             'polipo'
+name             'polipo-appliance'
 maintainer       'BlueBox Inc.'
 maintainer_email 'scooper@bluebox.met'
 license          'Apache 2.0'
