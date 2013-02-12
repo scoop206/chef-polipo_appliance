@@ -1,0 +1,4 @@
+gem 'vagrant'
+gem 'test-kitchen'
+gem 'kitchen-vagrant', :git => 'git://github.com/opscode/kitchen-vagrant.git'
+gem 'berkshelf'

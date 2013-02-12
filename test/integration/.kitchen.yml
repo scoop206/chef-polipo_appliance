@@ -1,0 +1,39 @@
+---
+driver_plugin: vagrant
+
+platforms:
+
+- name: ubuntu-12.04
+  driver_config:
+    box: opscode-ubuntu-12.04
+    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box
+  run_list:
+  - recipe[polipo::client_proxy]
+  - recipe[apt]
+  attributes:
+    polipo:
+      proxy_ipaddress: 192.168.0.55
+  
+- name: centos-6.3
+  driver_config:
+    box: opscode-centos-6.3
+    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-centos-6.3.box
+  run_list:
+  - recipe[polipo::client_proxy]
+  - recipe[yum::epel]
+  attributes:
+    polipo:
+      proxy_ipaddress: 192.168.0.55
+
+suites:
+
+- name: ubuntu
+  run_list: []
+  excludes:
+  - centos-6.3
+
+- name: centos
+  run_list: []
+  excludes:
+  - ubuntu-12.04
+
