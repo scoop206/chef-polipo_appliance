@@ -12,7 +12,7 @@ platforms:
   - recipe[apt]
   attributes:
     polipo:
-      proxy_ipaddress: 192.168.0.55
+      proxy_ipaddress: PROXY_IP
   
 - name: centos-6.3
   driver_config:
@@ -23,7 +23,7 @@ platforms:
   - recipe[yum::epel]
   attributes:
     polipo:
-      proxy_ipaddress: 192.168.0.55
+      proxy_ipaddress: PROXY_IP
 
 suites:
 
