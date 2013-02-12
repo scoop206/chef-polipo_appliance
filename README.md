@@ -124,12 +124,19 @@ Troubleshooting
 
 Since polipo is an HTTP proxy you can test the appliance using your browser.  Use your appliance's IP and target port 8123.
 
+Testing
+-------
+```bash
+rake test
+```
+
 Contributing
 ------------
 
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
+4. Run the tests
 6. Submit a Pull Request using Github
 
 License and Authors
