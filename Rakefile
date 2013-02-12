@@ -13,7 +13,7 @@ task :test do
 
   Dir.chdir("test/integration")
   proxy_ip =`cat proxy_ip`.chomp
-  `sed -i -e "s/proxy_ipaddress: PROXY_IP/proxy_ipaddress: #{proxy_ip}/" .kitchen.yml`
+  `sed -i '' -e "s/proxy_ipaddress: .*$/proxy_ipaddress: #{proxy_ip}/" .kitchen.yml`
 
   cmd = "bundle exec kitchen test"
   pipe = IO.popen(cmd)

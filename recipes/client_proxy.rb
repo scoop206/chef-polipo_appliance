@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: polipo
+# Cookbook Name:: polipo_appliance
 # Recipe:: client_proxy
 #
 # Copyright 2013, Bluebox Inc.
@@ -24,7 +24,7 @@ when 'rhel', 'fedora'
   template '/etc/yum.conf' do
     source 'proxied_yum.conf'
     mode '0644'
-    variables :proxy => node["polipo"]["proxy_ipaddress"]
+    variables :proxy => node["polipo_appliance"]["proxy_ipaddress"]
   end
 
 when 'debian'
@@ -32,7 +32,7 @@ when 'debian'
   template '/etc/apt/apt.conf' do
     source 'proxied_apt.conf'
     mode '0644'
-    variables :proxy => node["polipo"]["proxy_ipaddress"]    
+    variables :proxy => node["polipo_appliance"]["proxy_ipaddress"]    
   end
   
 end

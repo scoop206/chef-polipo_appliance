@@ -16,7 +16,7 @@ Vagrant::Config.run do |config|
   # to skip installing and copying to Vagrant's shelf.
   # config.berkshelf.except = []
 
-  config.vm.host_name = "polipo-berkshelf"
+  config.vm.host_name = "polipo-appliance"
 
   config.vm.box = "opscode-ubuntu-12.04"
   config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"
@@ -50,13 +50,13 @@ Vagrant::Config.run do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.json = {
-      :polipo => {
+      :polipo_appliance => {
         :allowed_clients => "192.168.0.0/16, 10.0.0.0/24"
       }
     }
 
     chef.run_list = [
-      "recipe[polipo::default]"
+      "recipe[polipo_appliance]"
     ]
   end
 end

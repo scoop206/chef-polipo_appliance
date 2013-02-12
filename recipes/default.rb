@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: polipo
+# Cookbook Name:: polipo_appliance
 # Recipe:: default
 #
 # Copyright 2013, Bluebox Inc.
@@ -29,6 +29,6 @@ end
 template "/etc/polipo/config" do
   mode "0644"
   source "polipo_config"
-  variables :allowed_clients => node["polipo"]["allowed_clients"]
+  variables :allowed_clients => node["polipo_appliance"]["allowed_clients"]
   notifies :restart, "service[polipo]"
 end
