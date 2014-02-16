@@ -1,0 +1,1382 @@
+I, [2014-02-18T08:13:03.842942 #26479]  INFO -- ubuntu-ubuntu-1204: -----> Cleaning up any prior instances of <ubuntu-ubuntu-1204>
+I, [2014-02-18T08:13:03.843132 #26479]  INFO -- ubuntu-ubuntu-1204: -----> Destroying <ubuntu-ubuntu-1204>...
+I, [2014-02-18T08:13:03.850666 #26479]  INFO -- ubuntu-ubuntu-1204: Finished destroying <ubuntu-ubuntu-1204> (0m0.00s).
+I, [2014-02-18T08:13:03.850993 #26479]  INFO -- ubuntu-ubuntu-1204: -----> Testing <ubuntu-ubuntu-1204>
+I, [2014-02-18T08:13:03.851159 #26479]  INFO -- ubuntu-ubuntu-1204: -----> Creating <ubuntu-ubuntu-1204>...
+I, [2014-02-18T08:13:07.469172 #26479]  INFO -- ubuntu-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-02-18T08:13:11.417401 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 30%Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2014-02-18T08:13:35.687379 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-02-18T08:13:36.617419 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-02-18T08:13:36.672100 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-02-18T08:13:36.759445 #26479]  INFO -- ubuntu-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-02-18T08:13:38.178848 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2203.
+I, [2014-02-18T08:13:38.221409 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-02-18T08:13:38.280272 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-02-18T08:13:38.333790 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Forwarding ports...
+I, [2014-02-18T08:13:38.420178 #26479]  INFO -- ubuntu-ubuntu-1204: [default] -- 22 => 2203 (adapter 1)
+I, [2014-02-18T08:13:38.602380 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-02-18T08:13:38.643361 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Booting VM...
+I, [2014-02-18T08:13:39.179861 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Waiting for machine to boot. This may take a few minutes...
+I, [2014-02-18T08:13:55.197136 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Machine booted and ready!
+I, [2014-02-18T08:13:55.233794 #26479]  INFO -- ubuntu-ubuntu-1204: [default] The guest additions on this VM do not match the installed version of
+I, [2014-02-18T08:13:55.233952 #26479]  INFO -- ubuntu-ubuntu-1204: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2014-02-18T08:13:55.234036 #26479]  INFO -- ubuntu-ubuntu-1204: prevent things such as shared folders from working properly. If you see
+I, [2014-02-18T08:13:55.234118 #26479]  INFO -- ubuntu-ubuntu-1204: shared folder errors, please make sure the guest additions within the
+I, [2014-02-18T08:13:55.234199 #26479]  INFO -- ubuntu-ubuntu-1204: virtual machine match the version of VirtualBox you have installed on
+I, [2014-02-18T08:13:55.234293 #26479]  INFO -- ubuntu-ubuntu-1204: your host and reload your VM.
+I, [2014-02-18T08:13:55.234390 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:13:55.234481 #26479]  INFO -- ubuntu-ubuntu-1204: Guest Additions Version: 4.1.22
+I, [2014-02-18T08:13:55.234581 #26479]  INFO -- ubuntu-ubuntu-1204: VirtualBox Version: 4.3
+I, [2014-02-18T08:13:55.235514 #26479]  INFO -- ubuntu-ubuntu-1204: [default] Setting hostname...
+I, [2014-02-18T08:14:03.619089 #26479]  INFO -- ubuntu-ubuntu-1204: Vagrant instance <ubuntu-ubuntu-1204> created.
+I, [2014-02-18T08:14:03.636365 #26479]  INFO -- ubuntu-ubuntu-1204: Finished creating <ubuntu-ubuntu-1204> (0m59.77s).
+I, [2014-02-18T08:14:03.637340 #26479]  INFO -- ubuntu-ubuntu-1204: -----> Converging <ubuntu-ubuntu-1204>...
+I, [2014-02-18T08:14:03.644049 #26479]  INFO -- ubuntu-ubuntu-1204: Preparing files for transfer
+I, [2014-02-18T08:14:03.740331 #26479]  INFO -- ubuntu-ubuntu-1204: Resolving cookbook dependencies with Berkshelf 2.0.14...
+I, [2014-02-18T08:14:07.324087 #26479]  INFO -- ubuntu-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-02-18T08:14:07.445530 #26479]  INFO -- ubuntu-ubuntu-1204: Transfering files to <ubuntu-ubuntu-1204>
+[2014-02-18T16:14:06+00:00] INFO: *** Chef 10.14.4 ***I, [2014-02-18T08:14:09.120907 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:14:06+00:00] INFO: Setting the run_list to ["recipe[polipo_appliance::client_proxy]", "recipe[apt]"] from JSONI, [2014-02-18T08:14:09.678471 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:14:06+00:00] INFO: Run List is [recipe[polipo_appliance::client_proxy], recipe[apt]]I, [2014-02-18T08:14:09.680078 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:14:06+00:00] INFO: Run List expands to [polipo_appliance::client_proxy, apt]I, [2014-02-18T08:14:09.680856 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:14:06+00:00] INFO: Starting Chef Run for ubuntu-ubuntu-1204I, [2014-02-18T08:14:09.681285 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:14:06+00:00] INFO: Running start handlersI, [2014-02-18T08:14:09.681899 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:14:06+00:00] INFO: Start handlers complete.I, [2014-02-18T08:14:09.682585 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:14:06+00:00] INFO: Processing template[/etc/apt/apt.conf] action create (polipo_appliance::client_proxy line 32)I, [2014-02-18T08:14:09.706432 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:14:06+00:00] INFO: template[/etc/apt/apt.conf] updated contentI, [2014-02-18T08:14:09.787195 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:14:06+00:00] INFO: template[/etc/apt/apt.conf] mode changed to 644I, [2014-02-18T08:14:09.788382 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:14:06+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)I, [2014-02-18T08:14:09.789125 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise InReleaseI, [2014-02-18T08:15:13.018344 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-updates InReleaseI, [2014-02-18T08:15:13.027589 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports InReleaseI, [2014-02-18T08:15:13.028667 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://security.ubuntu.com precise-security InReleaseI, [2014-02-18T08:15:13.029303 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise Release.gpgI, [2014-02-18T08:15:13.029900 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.030580 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise-updates Release.gpgI, [2014-02-18T08:15:13.031225 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.031887 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://security.ubuntu.com precise-security Release.gpgI, [2014-02-18T08:15:13.032501 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.033474 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.033600 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports Release.gpg
+I, [2014-02-18T08:15:13.033668 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.033728 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise Release
+I, [2014-02-18T08:15:13.033795 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security Release
+I, [2014-02-18T08:15:13.033867 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates Release
+I, [2014-02-18T08:15:13.033925 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports Release
+I, [2014-02-18T08:15:13.034002 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.034509 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.034546 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.034594 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.034662 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.034710 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.034813 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.034856 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.034912 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.034997 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035070 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035126 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.035197 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.035235 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.035289 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035346 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035401 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035470 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035530 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035559 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035646 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035692 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035766 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.035855 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main TranslationIndex
+I, [2014-02-18T08:15:13.035923 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.035972 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted TranslationIndex
+I, [2014-02-18T08:15:13.036020 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe TranslationIndex
+I, [2014-02-18T08:15:13.036049 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.036102 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.036176 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.036229 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.036268 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.036340 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main TranslationIndex
+I, [2014-02-18T08:15:13.036418 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.036469 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted TranslationIndex
+I, [2014-02-18T08:15:13.036516 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe TranslationIndex
+I, [2014-02-18T08:15:13.036558 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.036613 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.036680 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.036742 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.036806 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.036883 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.036925 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.050851 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.050941 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.051024 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main TranslationIndex
+I, [2014-02-18T08:15:13.051095 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.055840 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-updates/restricted TranslationIndexI, [2014-02-18T08:15:13.056434 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-updates/universe TranslationIndexI, [2014-02-18T08:15:13.056856 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/main Sources/DiffIndexI, [2014-02-18T08:15:13.057279 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/restricted Sources/DiffIndexI, [2014-02-18T08:15:13.057712 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/universe Sources/DiffIndexI, [2014-02-18T08:15:13.058213 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.058295 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.058365 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.058451 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.058515 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.058589 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.059017 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/main i386 Packages/DiffIndexI, [2014-02-18T08:15:13.059544 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/restricted i386 Packages/DiffIndexI, [2014-02-18T08:15:13.059989 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/universe i386 Packages/DiffIndexI, [2014-02-18T08:15:13.060585 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages/DiffIndexI, [2014-02-18T08:15:13.061057 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/main TranslationIndexI, [2014-02-18T08:15:13.061346 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndexI, [2014-02-18T08:15:13.061632 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/restricted TranslationIndexI, [2014-02-18T08:15:13.061951 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports/universe TranslationIndexI, [2014-02-18T08:15:13.062240 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://security.ubuntu.com precise-security/main SourcesI, [2014-02-18T08:15:13.062534 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.062948 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://security.ubuntu.com precise-security/restricted SourcesI, [2014-02-18T08:15:13.063317 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.063613 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://security.ubuntu.com precise-security/universe SourcesI, [2014-02-18T08:15:13.063886 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.064163 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://security.ubuntu.com precise-security/multiverse SourcesI, [2014-02-18T08:15:13.064503 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.064838 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://security.ubuntu.com precise-security/main amd64 PackagesI, [2014-02-18T08:15:13.065123 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.065550 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://security.ubuntu.com precise-security/restricted amd64 PackagesI, [2014-02-18T08:15:13.066022 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.066496 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.066904 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe amd64 Packages
+I, [2014-02-18T08:15:13.066967 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.067030 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.067078 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.067127 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/main i386 Packages
+I, [2014-02-18T08:15:13.067173 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.067219 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/restricted i386 Packages
+I, [2014-02-18T08:15:13.067265 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.067346 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe i386 Packages
+I, [2014-02-18T08:15:13.067397 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.067445 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/multiverse i386 Packages
+I, [2014-02-18T08:15:13.068129 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.068603 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://security.ubuntu.com precise-security/main Translation-enI, [2014-02-18T08:15:13.068883 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.069263 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://security.ubuntu.com precise-security/multiverse Translation-enI, [2014-02-18T08:15:13.069735 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.070221 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.070285 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/restricted Translation-en
+I, [2014-02-18T08:15:13.070335 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.070389 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe Translation-en
+I, [2014-02-18T08:15:13.070466 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+Err http://us.archive.ubuntu.com precise/main SourcesI, [2014-02-18T08:15:13.071036 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.071499 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise/restricted SourcesI, [2014-02-18T08:15:13.071937 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.072362 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise/universe SourcesI, [2014-02-18T08:15:13.074042 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.074433 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise/multiverse SourcesI, [2014-02-18T08:15:13.074860 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.075306 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise/main amd64 PackagesI, [2014-02-18T08:15:13.075748 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.076214 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise/restricted amd64 PackagesI, [2014-02-18T08:15:13.076784 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.077247 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise/universe amd64 PackagesI, [2014-02-18T08:15:13.077744 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.078022 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.078100 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.078165 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.078211 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/main i386 Packages
+I, [2014-02-18T08:15:13.078240 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.078279 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/restricted i386 Packages
+I, [2014-02-18T08:15:13.078307 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.078334 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/universe i386 Packages
+I, [2014-02-18T08:15:13.078854 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.079318 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise/multiverse i386 PackagesI, [2014-02-18T08:15:13.079799 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.080252 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.080597 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/main Translation-en
+I, [2014-02-18T08:15:13.080655 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.080695 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/multiverse Translation-en
+I, [2014-02-18T08:15:13.080736 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.080764 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/restricted Translation-en
+I, [2014-02-18T08:15:13.080803 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.080830 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/universe Translation-en
+I, [2014-02-18T08:15:13.081336 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.081386 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.081454 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main Sources
+I, [2014-02-18T08:15:13.081506 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.081571 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted Sources
+I, [2014-02-18T08:15:13.081623 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.081689 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/universe Sources
+I, [2014-02-18T08:15:13.081753 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.081804 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse Sources
+I, [2014-02-18T08:15:13.081855 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.081904 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main amd64 Packages
+I, [2014-02-18T08:15:13.082455 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.082838 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise-updates/restricted amd64 PackagesI, [2014-02-18T08:15:13.083109 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.083296 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.083346 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/universe amd64 Packages
+I, [2014-02-18T08:15:13.083377 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.083405 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.083444 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.083474 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main i386 Packages
+I, [2014-02-18T08:15:13.083502 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.083555 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted i386 Packages
+I, [2014-02-18T08:15:13.083683 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.083723 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/universe i386 Packages
+I, [2014-02-18T08:15:13.083752 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.083778 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages
+I, [2014-02-18T08:15:13.083826 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.083875 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main Translation-en
+I, [2014-02-18T08:15:13.083906 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.083947 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
+I, [2014-02-18T08:15:13.083993 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.084068 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+I, [2014-02-18T08:15:13.085993 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.086583 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise-updates/universe Translation-enI, [2014-02-18T08:15:13.093057 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.093161 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.093558 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main Sources
+I, [2014-02-18T08:15:13.093628 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.093674 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted Sources
+I, [2014-02-18T08:15:13.093737 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.093782 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe Sources
+I, [2014-02-18T08:15:13.093844 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.093907 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse Sources
+I, [2014-02-18T08:15:13.093963 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.094023 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main amd64 Packages
+I, [2014-02-18T08:15:13.094079 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.094122 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
+I, [2014-02-18T08:15:13.094164 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.094233 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
+I, [2014-02-18T08:15:13.094276 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.094317 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.094381 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+Err http://us.archive.ubuntu.com precise-backports/main i386 PackagesI, [2014-02-18T08:15:13.097339 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.097845 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Err http://us.archive.ubuntu.com precise-backports/restricted i386 PackagesI, [2014-02-18T08:15:13.098197 #26479]  INFO -- ubuntu-ubuntu-1204: 
+  Unable to connect to 192.168.0.18:8123:I, [2014-02-18T08:15:13.098558 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.098804 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe i386 Packages
+I, [2014-02-18T08:15:13.098856 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.098924 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
+I, [2014-02-18T08:15:13.098983 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.099026 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main Translation-en
+I, [2014-02-18T08:15:13.099055 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.099081 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+I, [2014-02-18T08:15:13.099141 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.099168 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+I, [2014-02-18T08:15:13.099206 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.099232 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe Translation-en
+I, [2014-02-18T08:15:13.099258 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+[2014-02-18T16:15:10+00:00] ERROR: execute[apt-get-update] (apt::default line 30) had an error: Expected process to exit with [0], but received '100'I, [2014-02-18T08:15:13.110032 #26479]  INFO -- ubuntu-ubuntu-1204: 
+---- Begin output of apt-get update ----I, [2014-02-18T08:15:13.111033 #26479]  INFO -- ubuntu-ubuntu-1204: 
+STDOUT: Ign http://us.archive.ubuntu.com precise InReleaseI, [2014-02-18T08:15:13.111896 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-updates InReleaseI, [2014-02-18T08:15:13.112973 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.113067 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports InRelease
+I, [2014-02-18T08:15:13.113154 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security InRelease
+I, [2014-02-18T08:15:13.113231 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise Release.gpg
+I, [2014-02-18T08:15:13.113290 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.113337 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates Release.gpg
+I, [2014-02-18T08:15:13.113402 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.113523 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security Release.gpg
+I, [2014-02-18T08:15:13.113583 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.113658 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports Release.gpg
+I, [2014-02-18T08:15:13.113759 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.113825 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise Release
+I, [2014-02-18T08:15:13.113908 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security Release
+I, [2014-02-18T08:15:13.113983 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates Release
+I, [2014-02-18T08:15:13.114034 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports Release
+I, [2014-02-18T08:15:13.114094 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.114153 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.114211 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.114240 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.114290 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.114343 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.114404 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.114446 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.114494 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.114559 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.114621 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.114684 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.114732 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.114788 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.114827 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.114883 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.114942 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.115004 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.115036 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.115076 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.115105 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.115142 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.115180 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.115239 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main TranslationIndex
+I, [2014-02-18T08:15:13.115271 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.115308 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted TranslationIndex
+I, [2014-02-18T08:15:13.115335 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe TranslationIndex
+I, [2014-02-18T08:15:13.115375 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.118232 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.118327 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.118368 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.118398 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.118440 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.118469 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main TranslationIndex
+I, [2014-02-18T08:15:13.118515 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.118544 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted TranslationIndex
+I, [2014-02-18T08:15:13.118603 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe TranslationIndex
+I, [2014-02-18T08:15:13.118631 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.118668 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.118695 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.118734 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.118762 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.118789 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.118815 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.118855 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.118889 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main TranslationIndex
+I, [2014-02-18T08:15:13.118916 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.118954 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex
+I, [2014-02-18T08:15:13.118981 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe TranslationIndex
+I, [2014-02-18T08:15:13.119007 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.119033 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.119060 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.119098 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.119135 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.119163 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.119264 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.119339 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.119402 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.119451 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.119486 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.119526 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.119565 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/main TranslationIndex
+I, [2014-02-18T08:15:13.119610 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.119656 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex
+I, [2014-02-18T08:15:13.119734 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
+I, [2014-02-18T08:15:13.119786 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/main Sources
+I, [2014-02-18T08:15:13.119836 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.119885 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/restricted Sources
+I, [2014-02-18T08:15:13.119952 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.120002 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe Sources
+I, [2014-02-18T08:15:13.120049 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.120092 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/multiverse Sources
+I, [2014-02-18T08:15:13.120151 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.120195 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/main amd64 Packages
+I, [2014-02-18T08:15:13.120246 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.120310 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/restricted amd64 Packages
+I, [2014-02-18T08:15:13.120357 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.120417 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe amd64 Packages
+I, [2014-02-18T08:15:13.120463 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.120508 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.120536 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.120571 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/main i386 Packages
+I, [2014-02-18T08:15:13.120618 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.120676 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/restricted i386 Packages
+I, [2014-02-18T08:15:13.120707 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.120773 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe i386 
+I, [2014-02-18T08:15:13.125902 #26479]  INFO -- ubuntu-ubuntu-1204: Packages
+I, [2014-02-18T08:15:13.125974 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.126017 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/multiverse i386 Packages
+I, [2014-02-18T08:15:13.126045 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.126071 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/main Translation-en
+I, [2014-02-18T08:15:13.126109 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.126158 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/multiverse Translation-en
+I, [2014-02-18T08:15:13.126208 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.126283 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/restricted Translation-en
+I, [2014-02-18T08:15:13.126368 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.126441 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe Translation-en
+I, [2014-02-18T08:15:13.126492 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.126541 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/main Sources
+I, [2014-02-18T08:15:13.126612 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.126664 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/restricted Sources
+I, [2014-02-18T08:15:13.126712 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.126742 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/universe Sources
+I, [2014-02-18T08:15:13.126789 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.126853 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/multiverse Sources
+I, [2014-02-18T08:15:13.126904 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.126945 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/main amd64 Packages
+I, [2014-02-18T08:15:13.126994 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127034 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/restricted amd64 Packages
+I, [2014-02-18T08:15:13.127062 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127088 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/universe amd64 Packages
+I, [2014-02-18T08:15:13.127114 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127140 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.127179 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127206 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/main i386 Packages
+I, [2014-02-18T08:15:13.127233 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127258 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/restricted i386 Packages
+I, [2014-02-18T08:15:13.127297 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127324 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/universe i386 Packages
+I, [2014-02-18T08:15:13.127363 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127390 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/multiverse i386 Packages
+I, [2014-02-18T08:15:13.127424 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127500 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/main Translation-en
+I, [2014-02-18T08:15:13.127547 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127592 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/multiverse Translation-en
+I, [2014-02-18T08:15:13.127654 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127718 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/restricted Translation-en
+I, [2014-02-18T08:15:13.127767 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127820 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/universe Translation-en
+I, [2014-02-18T08:15:13.127851 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127890 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main Sources
+I, [2014-02-18T08:15:13.127917 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.127943 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted Sources
+I, [2014-02-18T08:15:13.127970 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128006 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/universe Sources
+I, [2014-02-18T08:15:13.128071 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128110 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse Sources
+I, [2014-02-18T08:15:13.128152 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128179 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main amd64 Packages
+I, [2014-02-18T08:15:13.128227 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128255 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages
+I, [2014-02-18T08:15:13.128302 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128330 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/universe amd64 Packages
+I, [2014-02-18T08:15:13.128367 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128394 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.128419 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128445 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main i386 Packages
+I, [2014-02-18T08:15:13.128493 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128557 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted i386 Packages
+I, [2014-02-18T08:15:13.128599 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128627 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/universe i386 Packages
+I, [2014-02-18T08:15:13.128686 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128724 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages
+I, [2014-02-18T08:15:13.128764 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128829 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main Translation-en
+I, [2014-02-18T08:15:13.128877 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.128926 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
+I, [2014-02-18T08:15:13.128991 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.129036 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+I, [2014-02-18T08:15:13.129097 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.129158 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubun
+I, [2014-02-18T08:15:13.132638 #26479]  INFO -- ubuntu-ubuntu-1204: tu.com precise-updates/universe Translation-en
+I, [2014-02-18T08:15:13.132728 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.132799 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main Sources
+I, [2014-02-18T08:15:13.132852 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.132900 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted Sources
+I, [2014-02-18T08:15:13.132950 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.132996 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe Sources
+I, [2014-02-18T08:15:13.133059 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133117 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse Sources
+I, [2014-02-18T08:15:13.133186 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133242 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main amd64 Packages
+I, [2014-02-18T08:15:13.133284 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133323 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
+I, [2014-02-18T08:15:13.133351 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133395 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
+I, [2014-02-18T08:15:13.133438 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133479 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.133506 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133533 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main i386 Packages
+I, [2014-02-18T08:15:13.133559 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133600 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted i386 Packages
+I, [2014-02-18T08:15:13.133627 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133653 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe i386 Packages
+I, [2014-02-18T08:15:13.133679 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133739 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
+I, [2014-02-18T08:15:13.133766 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133792 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main Translation-en
+I, [2014-02-18T08:15:13.133819 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133855 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+I, [2014-02-18T08:15:13.133882 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133913 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+I, [2014-02-18T08:15:13.133944 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.133995 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe Translation-en
+I, [2014-02-18T08:15:13.134024 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134050 #26479]  INFO -- ubuntu-ubuntu-1204: STDERR: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/Release.gpg  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134076 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.134102 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/Release.gpg  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134140 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.134167 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/Release.gpg  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134196 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.134223 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/Release.gpg  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134260 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.134287 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134313 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.134346 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134384 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.134424 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134451 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.134477 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134506 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.134544 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134571 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.134597 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.134622 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.134649 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.141789 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.141899 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.141954 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.142005 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.142072 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.142118 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.142163 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.142234 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.142282 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.142389 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.142437 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.142482 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.142528 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.142592 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.142644 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.142707 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.142752 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.142812 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.142858 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.142905 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.142948 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143002 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143044 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143090 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143138 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143199 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143247 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143297 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143344 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143406 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143449 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143494 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143545 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143609 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143641 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143668 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143701 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143754 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143783 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143820 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143865 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.143940 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.143987 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.144036 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.144076 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.144117 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.144144 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.144170 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.144209 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.144250 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.144285 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.144343 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.144390 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.144440 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.144475 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.144528 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.144556 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/i18n/Translation-en  Unable to connect to 192.168.0.18:812
+I, [2014-02-18T08:15:13.147189 #26479]  INFO -- ubuntu-ubuntu-1204: 3:
+I, [2014-02-18T08:15:13.147264 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.147315 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.147386 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.147439 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.147487 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.147531 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.147591 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.147641 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.147714 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.147782 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.147827 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.147856 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.147889 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.147935 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148001 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148032 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148059 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148101 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148137 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148165 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148192 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148231 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148258 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148284 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148309 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148336 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148395 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148441 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148477 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148505 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148560 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148595 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148618 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148642 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148676 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148700 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148740 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148769 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148793 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148828 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148852 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148875 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148907 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148932 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.148955 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.148979 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.149002 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.149029 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.149103 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.149138 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.149165 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.149191 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.149229 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.149256 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.149282 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.149308 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed 
+I, [2014-02-18T08:15:13.361245 #26479]  INFO -- ubuntu-ubuntu-1204: to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.361315 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.361347 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.361375 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.361415 #26479]  INFO -- ubuntu-ubuntu-1204: E: Some index files failed to download. They have been ignored, or old ones used instead.
+I, [2014-02-18T08:15:13.361462 #26479]  INFO -- ubuntu-ubuntu-1204: ---- End output of apt-get update ----
+I, [2014-02-18T08:15:13.361509 #26479]  INFO -- ubuntu-ubuntu-1204: Ran apt-get update returned 100; ignore_failure is set, continuing
+I, [2014-02-18T08:15:13.361540 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.361924 #26479]  INFO -- ubuntu-ubuntu-1204: ================================================================================
+I, [2014-02-18T08:15:13.361965 #26479]  INFO -- ubuntu-ubuntu-1204: Error executing action `run` on resource 'execute[apt-get-update]'
+I, [2014-02-18T08:15:13.362031 #26479]  INFO -- ubuntu-ubuntu-1204: ================================================================================
+I, [2014-02-18T08:15:13.362084 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.362135 #26479]  INFO -- ubuntu-ubuntu-1204: Mixlib::ShellOut::ShellCommandFailed
+I, [2014-02-18T08:15:13.362186 #26479]  INFO -- ubuntu-ubuntu-1204: ------------------------------------
+I, [2014-02-18T08:15:13.362238 #26479]  INFO -- ubuntu-ubuntu-1204: Expected process to exit with [0], but received '100'
+I, [2014-02-18T08:15:13.362289 #26479]  INFO -- ubuntu-ubuntu-1204: ---- Begin output of apt-get update ----
+I, [2014-02-18T08:15:13.362363 #26479]  INFO -- ubuntu-ubuntu-1204: STDOUT: Ign http://us.archive.ubuntu.com precise InRelease
+I, [2014-02-18T08:15:13.362415 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates InRelease
+I, [2014-02-18T08:15:13.362456 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports InRelease
+I, [2014-02-18T08:15:13.362485 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security InRelease
+I, [2014-02-18T08:15:13.362512 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise Release.gpg
+I, [2014-02-18T08:15:13.362541 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.362568 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates Release.gpg
+I, [2014-02-18T08:15:13.362596 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.362623 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security Release.gpg
+I, [2014-02-18T08:15:13.362650 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.362678 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports Release.gpg
+I, [2014-02-18T08:15:13.362706 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.362733 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise Release
+I, [2014-02-18T08:15:13.362760 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security Release
+I, [2014-02-18T08:15:13.362788 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates Release
+I, [2014-02-18T08:15:13.362817 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports Release
+I, [2014-02-18T08:15:13.362844 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.362873 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.362901 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.362928 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.362964 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.362993 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363022 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363049 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363076 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363108 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363152 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363194 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.363225 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.363253 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.363280 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363308 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363335 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363362 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363390 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363416 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363444 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363471 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363499 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363526 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/main TranslationIndex
+I, [2014-02-18T08:15:13.363554 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.363580 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/restricted TranslationIndex
+I, [2014-02-18T08:15:13.363607 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise/universe TranslationIndex
+I, [2014-02-18T08:15:13.363635 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.363662 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.363690 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.363717 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.363744 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363772 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/main TranslationIndex
+I, [2014-02-18T08:15:13.363799 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.363827 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/restricted TranslationIndex
+I, [2014-02-18T08:15:13.363854 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://security.ubuntu.com precise-security/universe TranslationIndex
+I, [2014-02-18T08:15:13.363881 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.363909 #26479]  INFO -- ubuntu-ubuntu-1204: Ign h
+I, [2014-02-18T08:15:13.374047 #26479]  INFO -- ubuntu-ubuntu-1204: ttp://us.archive.ubuntu.com precise-updates/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.374172 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.374224 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.374270 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.374437 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.374483 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.374527 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.374569 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/main TranslationIndex
+I, [2014-02-18T08:15:13.374612 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.374655 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex
+I, [2014-02-18T08:15:13.374696 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-updates/universe TranslationIndex
+I, [2014-02-18T08:15:13.374739 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/main Sources/DiffIndex
+I, [2014-02-18T08:15:13.374781 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/restricted Sources/DiffIndex
+I, [2014-02-18T08:15:13.374825 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/universe Sources/DiffIndex
+I, [2014-02-18T08:15:13.374878 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/multiverse Sources/DiffIndex
+I, [2014-02-18T08:15:13.374921 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/main amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.374963 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.375153 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/universe amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.375204 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages/DiffIndex
+I, [2014-02-18T08:15:13.375253 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/main i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.375298 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/restricted i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.375341 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/universe i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.375383 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages/DiffIndex
+I, [2014-02-18T08:15:13.375427 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/main TranslationIndex
+I, [2014-02-18T08:15:13.375468 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
+I, [2014-02-18T08:15:13.375629 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex
+I, [2014-02-18T08:15:13.375689 #26479]  INFO -- ubuntu-ubuntu-1204: Ign http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
+I, [2014-02-18T08:15:13.375736 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/main Sources
+I, [2014-02-18T08:15:13.375781 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.375849 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/restricted Sources
+I, [2014-02-18T08:15:13.375896 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.375939 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe Sources
+I, [2014-02-18T08:15:13.380467 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.380562 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/multiverse Sources
+I, [2014-02-18T08:15:13.380610 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.380656 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/main amd64 Packages
+I, [2014-02-18T08:15:13.380706 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.380750 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/restricted amd64 Packages
+I, [2014-02-18T08:15:13.380801 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.380848 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe amd64 Packages
+I, [2014-02-18T08:15:13.380893 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.380935 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.381030 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381076 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/main i386 Packages
+I, [2014-02-18T08:15:13.381121 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381170 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/restricted i386 Packages
+I, [2014-02-18T08:15:13.381215 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381261 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe i386 Packages
+I, [2014-02-18T08:15:13.381305 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381354 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/multiverse i386 Packages
+I, [2014-02-18T08:15:13.381398 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381440 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/main Translation-en
+I, [2014-02-18T08:15:13.381484 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381526 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/multiverse Translation-en
+I, [2014-02-18T08:15:13.381569 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381625 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/restricted Translation-en
+I, [2014-02-18T08:15:13.381669 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381711 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://security.ubuntu.com precise-security/universe Translation-en
+I, [2014-02-18T08:15:13.381758 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381791 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/main Sources
+I, [2014-02-18T08:15:13.381819 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381846 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/restricted Sources
+I, [2014-02-18T08:15:13.381895 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381925 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/universe Sources
+I, [2014-02-18T08:15:13.381956 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.381984 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/multiverse Sources
+I, [2014-02-18T08:15:13.382016 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382043 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/main amd64 Packages
+I, [2014-02-18T08:15:13.382075 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382106 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/restricted amd64 Packages
+I, [2014-02-18T08:15:13.382173 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382207 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/universe amd64 Packages
+I, [2014-02-18T08:15:13.382237 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382265 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.382292 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382319 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/main i386 Packages
+I, [2014-02-18T08:15:13.382347 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382373 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/restricted i386 Packages
+I, [2014-02-18T08:15:13.382400 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382427 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/universe i386 Packages
+I, [2014-02-18T08:15:13.382454 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382481 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/multiverse i386 Packages
+I, [2014-02-18T08:15:13.382508 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382534 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/main Translation-en
+I, [2014-02-18T08:15:13.382562 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382589 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/multiverse Translation-en
+I, [2014-02-18T08:15:13.382616 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382643 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/restricted Translation-en
+I, [2014-02-18T08:15:13.382674 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382707 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise/universe Translation-en
+I, [2014-02-18T08:15:13.382742 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382789 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main Sources
+I, [2014-02-18T08:15:13.382839 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382884 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted Sources
+I, [2014-02-18T08:15:13.382933 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.382980 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/universe Sources
+I, [2014-02-18T08:15:13.383042 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.383090 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse Sources
+I, [2014-02-18T08:15:13.383138 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.383183 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main amd64 Packages
+I, [2014-02-18T08:15:13.383232 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.383279 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages
+I, [2014-02-18T08:15:13.383328 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.383375 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/universe amd64 Packages
+I, [2014-02-18T08:15:13.383426 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.383475 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/mul
+I, [2014-02-18T08:15:13.390851 #26479]  INFO -- ubuntu-ubuntu-1204: tiverse amd64 Packages
+I, [2014-02-18T08:15:13.390943 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.390977 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main i386 Packages
+I, [2014-02-18T08:15:13.391006 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391034 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted i386 Packages
+I, [2014-02-18T08:15:13.391062 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391093 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/universe i386 Packages
+I, [2014-02-18T08:15:13.391142 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391191 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages
+I, [2014-02-18T08:15:13.391237 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391278 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/main Translation-en
+I, [2014-02-18T08:15:13.391308 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391334 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
+I, [2014-02-18T08:15:13.391362 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391389 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+I, [2014-02-18T08:15:13.391416 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391443 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-updates/universe Translation-en
+I, [2014-02-18T08:15:13.391470 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391496 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main Sources
+I, [2014-02-18T08:15:13.391523 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391550 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted Sources
+I, [2014-02-18T08:15:13.391577 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391604 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe Sources
+I, [2014-02-18T08:15:13.391652 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391681 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse Sources
+I, [2014-02-18T08:15:13.391708 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391735 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main amd64 Packages
+I, [2014-02-18T08:15:13.391762 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391790 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
+I, [2014-02-18T08:15:13.391816 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391843 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
+I, [2014-02-18T08:15:13.391871 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391897 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
+I, [2014-02-18T08:15:13.391924 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.391950 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main i386 Packages
+I, [2014-02-18T08:15:13.391977 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392004 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted i386 Packages
+I, [2014-02-18T08:15:13.392049 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392084 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe i386 Packages
+I, [2014-02-18T08:15:13.392111 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392138 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
+I, [2014-02-18T08:15:13.392165 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392192 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/main Translation-en
+I, [2014-02-18T08:15:13.392219 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392246 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+I, [2014-02-18T08:15:13.392292 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392334 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+I, [2014-02-18T08:15:13.392362 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392389 #26479]  INFO -- ubuntu-ubuntu-1204: Err http://us.archive.ubuntu.com precise-backports/universe Translation-en
+I, [2014-02-18T08:15:13.392416 #26479]  INFO -- ubuntu-ubuntu-1204:   Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392444 #26479]  INFO -- ubuntu-ubuntu-1204: STDERR: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/Release.gpg  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392471 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.392498 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/Release.gpg  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392525 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.392551 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/Release.gpg  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392589 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.392636 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/Release.gpg  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392686 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.392739 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392769 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.392796 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392824 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.392851 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392877 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.392904 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392930 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.392957 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.392984 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.393010 #26479]  INFO -- ubuntu-ubuntu-1204: W: 
+I, [2014-02-18T08:15:13.405532 #26479]  INFO -- ubuntu-ubuntu-1204: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.405604 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.405636 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.405669 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.405697 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.405725 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.405752 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.405779 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.405809 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.405836 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.405866 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.405894 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.405921 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.405948 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.405975 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406027 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406057 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406084 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406111 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406141 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406169 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406197 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406224 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406250 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406277 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406306 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406333 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406361 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406387 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406413 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406439 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406466 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406492 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406529 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406557 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406584 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406610 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406637 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406664 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/multiverse/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406726 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406778 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/restricted/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406825 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406859 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise/universe/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406887 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406914 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.406956 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.406985 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.407013 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.407039 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.407067 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.407101 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.407147 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.407195 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.407244 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.407291 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/main/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.407338 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.407388 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetc
+I, [2014-02-18T08:15:13.513378 #26479]  INFO -- ubuntu-ubuntu-1204: h http://security.ubuntu.com/ubuntu/dists/precise-security/multiverse/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.513448 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.513480 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/restricted/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.513509 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.513536 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/precise-security/universe/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.513564 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.513592 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.513620 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.513647 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.513674 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.513701 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.513728 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.513755 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.513783 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.513829 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.513871 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.513910 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.513976 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514018 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514059 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514106 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514152 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514196 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/main/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514239 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514283 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/multiverse/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514327 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514371 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/restricted/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514414 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514463 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-updates/universe/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514512 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514562 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514609 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514656 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514701 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514746 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514794 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514839 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/source/Sources  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514885 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.514930 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.514975 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.515019 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.515063 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.515111 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.515157 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.515201 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-amd64/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.518953 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.519060 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/main/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.519113 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.519165 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.519215 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.519263 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.519311 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.519358 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/binary-i386/Packages  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.519650 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.519699 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.arch
+I, [2014-02-18T08:15:13.526672 #26479]  INFO -- ubuntu-ubuntu-1204: ive.ubuntu.com/ubuntu/dists/precise-backports/main/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.526742 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.526773 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/multiverse/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.526801 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.526828 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/restricted/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.526855 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.526881 #26479]  INFO -- ubuntu-ubuntu-1204: W: Failed to fetch http://us.archive.ubuntu.com/ubuntu/dists/precise-backports/universe/i18n/Translation-en  Unable to connect to 192.168.0.18:8123:
+I, [2014-02-18T08:15:13.526922 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.526959 #26479]  INFO -- ubuntu-ubuntu-1204: E: Some index files failed to download. They have been ignored, or old ones used instead.
+I, [2014-02-18T08:15:13.527005 #26479]  INFO -- ubuntu-ubuntu-1204: ---- End output of apt-get update ----
+I, [2014-02-18T08:15:13.527052 #26479]  INFO -- ubuntu-ubuntu-1204: Ran apt-get update returned 100
+I, [2014-02-18T08:15:13.527099 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.527146 #26479]  INFO -- ubuntu-ubuntu-1204: Resource Declaration:
+I, [2014-02-18T08:15:13.527217 #26479]  INFO -- ubuntu-ubuntu-1204: ---------------------
+I, [2014-02-18T08:15:13.527267 #26479]  INFO -- ubuntu-ubuntu-1204: # In /tmp/kitchen/cookbooks/apt/recipes/default.rb
+I, [2014-02-18T08:15:13.527315 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.527362 #26479]  INFO -- ubuntu-ubuntu-1204:  30: execute "apt-get-update" do
+I, [2014-02-18T08:15:13.527415 #26479]  INFO -- ubuntu-ubuntu-1204:  31:   command "apt-get update"
+I, [2014-02-18T08:15:13.527465 #26479]  INFO -- ubuntu-ubuntu-1204:  32:   ignore_failure true
+I, [2014-02-18T08:15:13.527512 #26479]  INFO -- ubuntu-ubuntu-1204:  33:   only_if { apt_installed? }
+I, [2014-02-18T08:15:13.527561 #26479]  INFO -- ubuntu-ubuntu-1204:  34:   not_if do ::File.exists?('/var/lib/apt/periodic/update-success-stamp') end
+I, [2014-02-18T08:15:13.527607 #26479]  INFO -- ubuntu-ubuntu-1204:  35: end
+I, [2014-02-18T08:15:13.527652 #26479]  INFO -- ubuntu-ubuntu-1204:  36: 
+I, [2014-02-18T08:15:13.527696 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.527742 #26479]  INFO -- ubuntu-ubuntu-1204: Compiled Resource:
+I, [2014-02-18T08:15:13.527815 #26479]  INFO -- ubuntu-ubuntu-1204: ------------------
+I, [2014-02-18T08:15:13.527869 #26479]  INFO -- ubuntu-ubuntu-1204: # Declared in /tmp/kitchen/cookbooks/apt/recipes/default.rb:30:in `from_file'
+I, [2014-02-18T08:15:13.527920 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.527967 #26479]  INFO -- ubuntu-ubuntu-1204: execute("apt-get-update") do
+I, [2014-02-18T08:15:13.528014 #26479]  INFO -- ubuntu-ubuntu-1204:   action "run"
+I, [2014-02-18T08:15:13.528065 #26479]  INFO -- ubuntu-ubuntu-1204:   ignore_failure true
+I, [2014-02-18T08:15:13.528107 #26479]  INFO -- ubuntu-ubuntu-1204:   retries 0
+I, [2014-02-18T08:15:13.528165 #26479]  INFO -- ubuntu-ubuntu-1204:   retry_delay 2
+I, [2014-02-18T08:15:13.528212 #26479]  INFO -- ubuntu-ubuntu-1204:   command "apt-get update"
+I, [2014-02-18T08:15:13.528262 #26479]  INFO -- ubuntu-ubuntu-1204:   backup 5
+I, [2014-02-18T08:15:13.528306 #26479]  INFO -- ubuntu-ubuntu-1204:   returns 0
+I, [2014-02-18T08:15:13.528335 #26479]  INFO -- ubuntu-ubuntu-1204:   cookbook_name :apt
+I, [2014-02-18T08:15:13.528362 #26479]  INFO -- ubuntu-ubuntu-1204:   recipe_name "default"
+I, [2014-02-18T08:15:13.528390 #26479]  INFO -- ubuntu-ubuntu-1204:   not_if { #code block }
+I, [2014-02-18T08:15:13.528417 #26479]  INFO -- ubuntu-ubuntu-1204:   only_if { #code block }
+I, [2014-02-18T08:15:13.528443 #26479]  INFO -- ubuntu-ubuntu-1204: end
+I, [2014-02-18T08:15:13.528470 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.528496 #26479]  INFO -- ubuntu-ubuntu-1204: [2014-02-18T16:15:10+00:00] INFO: Processing execute[apt-get update] action nothing (apt::default line 38)
+I, [2014-02-18T08:15:13.528524 #26479]  INFO -- ubuntu-ubuntu-1204: [2014-02-18T16:15:10+00:00] INFO: Processing execute[apt-get autoremove] action nothing (apt::default line 46)
+I, [2014-02-18T08:15:13.547318 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:13.547423 #26479]  INFO -- ubuntu-ubuntu-1204: [2014-02-18T16:15:10+00:00] INFO: Processing execute[apt-get autoclean] action nothing (apt::default line 53)
+I, [2014-02-18T08:15:13.547479 #26479]  INFO -- ubuntu-ubuntu-1204: [2014-02-18T16:15:10+00:00] INFO: Processing package[update-notifier-common] action install (apt::default line 60)
+I, [2014-02-18T08:15:13.547664 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:17.006916 #26479]  INFO -- ubuntu-ubuntu-1204: 
+================================================================================I, [2014-02-18T08:15:17.010673 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Error executing action `install` on resource 'package[update-notifier-common]'I, [2014-02-18T08:15:17.011368 #26479]  INFO -- ubuntu-ubuntu-1204: 
+================================================================================I, [2014-02-18T08:15:17.011794 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:17.012010 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Chef::Exceptions::ExecI, [2014-02-18T08:15:17.012519 #26479]  INFO -- ubuntu-ubuntu-1204: 
+----------------------I, [2014-02-18T08:15:17.012962 #26479]  INFO -- ubuntu-ubuntu-1204: 
+apt-get -q -y install update-notifier-common=0.119ubuntu8.5 returned 100, expected 0I, [2014-02-18T08:15:17.013355 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:17.013559 #26479]  INFO -- ubuntu-ubuntu-1204: 
+Resource Declaration:I, [2014-02-18T08:15:17.013964 #26479]  INFO -- ubuntu-ubuntu-1204: 
+---------------------I, [2014-02-18T08:15:17.014340 #26479]  INFO -- ubuntu-ubuntu-1204: 
+# In /tmp/kitchen/cookbooks/apt/recipes/default.rbI, [2014-02-18T08:15:17.014722 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:17.014961 #26479]  INFO -- ubuntu-ubuntu-1204: 
+ 60: package "update-notifier-common" doI, [2014-02-18T08:15:17.015297 #26479]  INFO -- ubuntu-ubuntu-1204: 
+ 61:   notifies :run, 'execute[apt-get-update]', :immediatelyI, [2014-02-18T08:15:17.015703 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:17.016015 #26479]  INFO -- ubuntu-ubuntu-1204:  62:   only_if { apt_installed? }
+I, [2014-02-18T08:15:17.016099 #26479]  INFO -- ubuntu-ubuntu-1204:  63: end
+I, [2014-02-18T08:15:17.016152 #26479]  INFO -- ubuntu-ubuntu-1204:  64: 
+I, [2014-02-18T08:15:17.016200 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:17.016234 #26479]  INFO -- ubuntu-ubuntu-1204: Compiled Resource:
+I, [2014-02-18T08:15:17.016262 #26479]  INFO -- ubuntu-ubuntu-1204: ------------------
+I, [2014-02-18T08:15:17.016289 #26479]  INFO -- ubuntu-ubuntu-1204: # Declared in /tmp/kitchen/cookbooks/apt/recipes/default.rb:60:in `from_file'
+I, [2014-02-18T08:15:17.016316 #26479]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:15:17.016343 #26479]  INFO -- ubuntu-ubuntu-1204: package("update-notifier-common") do
+I, [2014-02-18T08:15:17.016380 #26479]  INFO -- ubuntu-ubuntu-1204:   action :install
+I, [2014-02-18T08:15:17.016409 #26479]  INFO -- ubuntu-ubuntu-1204:   retries 0
+I, [2014-02-18T08:15:17.016436 #26479]  INFO -- ubuntu-ubuntu-1204:   retry_delay 2
+I, [2014-02-18T08:15:17.016473 #26479]  INFO -- ubuntu-ubuntu-1204:   package_name "update-notifier-common"
+I, [2014-02-18T08:15:17.016502 #26479]  INFO -- ubuntu-ubuntu-1204:   cookbook_name :apt
+I, [2014-02-18T08:15:17.016530 #26479]  INFO -- ubuntu-ubuntu-1204:   recipe_name "default"
+I, [2014-02-18T08:15:17.016557 #26479]  INFO -- ubuntu-ubuntu-1204:   only_if { #code block }
+I, [2014-02-18T08:15:17.016593 #26479]  INFO -- ubuntu-ubuntu-1204: end
+I, [2014-02-18T08:15:17.016621 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:15:13+00:00] ERROR: Running exception handlersI, [2014-02-18T08:15:17.017761 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:15:13+00:00] ERROR: Exception handlers completeI, [2014-02-18T08:15:17.018229 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:15:14+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.outI, [2014-02-18T08:15:17.033066 #26479]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:15:14+00:00] FATAL: Chef::Exceptions::Exec: package[update-notifier-common] (apt::default line 60) had an error: Chef::Exceptions::Exec: apt-get -q -y install update-notifier-common=0.119ubuntu8.5 returned 100, expected 0I, [2014-02-18T08:15:17.033842 #26479]  INFO -- ubuntu-ubuntu-1204: 
+E, [2014-02-18T08:15:17.080521 #26479] ERROR -- ubuntu-ubuntu-1204: Converge failed on instance <ubuntu-ubuntu-1204>.
+E, [2014-02-18T08:15:17.080846 #26479] ERROR -- ubuntu-ubuntu-1204: ------Exception-------
+E, [2014-02-18T08:15:17.080880 #26479] ERROR -- ubuntu-ubuntu-1204: Class: Kitchen::ActionFailed
+E, [2014-02-18T08:15:17.080905 #26479] ERROR -- ubuntu-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-02-18T08:15:17.080930 #26479] ERROR -- ubuntu-ubuntu-1204: ---Nested Exception---
+E, [2014-02-18T08:15:17.080953 #26479] ERROR -- ubuntu-ubuntu-1204: Class: Kitchen::SSHFailed
+E, [2014-02-18T08:15:17.080987 #26479] ERROR -- ubuntu-ubuntu-1204: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
+E, [2014-02-18T08:15:17.081011 #26479] ERROR -- ubuntu-ubuntu-1204: ------Backtrace-------
+E, [2014-02-18T08:15:17.081034 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:112:in `rescue in run_remote'
+E, [2014-02-18T08:15:17.081059 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
+E, [2014-02-18T08:15:17.081083 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:48:in `block in converge'
+E, [2014-02-18T08:15:17.081107 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2014-02-18T08:15:17.081142 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `new'
+E, [2014-02-18T08:15:17.081179 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/driver/ssh_base.rb:43:in `converge'
+E, [2014-02-18T08:15:17.081207 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/kitchen-vagrant-0.14.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-02-18T08:15:17.081236 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2014-02-18T08:15:17.081260 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2014-02-18T08:15:17.081284 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `call'
+E, [2014-02-18T08:15:17.081307 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2014-02-18T08:15:17.081331 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2014-02-18T08:15:17.081359 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-02-18T08:15:17.081394 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2014-02-18T08:15:17.081419 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2014-02-18T08:15:17.081443 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2014-02-18T08:15:17.081474 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2014-02-18T08:15:17.081497 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2014-02-18T08:15:17.081518 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2014-02-18T08:15:17.081539 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:141:in `verify'
+E, [2014-02-18T08:15:17.081561 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:170:in `block in test'
+E, [2014-02-18T08:15:17.081582 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-02-18T08:15:17.081603 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:166:in `test'
+E, [2014-02-18T08:15:17.081624 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-02-18T08:15:17.081645 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-02-18T08:15:17.081666 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/logging-1.8.2/lib/logging/diagnostic_context.rb:323:in `call'
+E, [2014-02-18T08:15:17.081688 #26479] ERROR -- ubuntu-ubuntu-1204: /Users/scooper/.rvm/gems/ruby-2.0.0-p247/gems/logging-1.8.2/lib/logging/diagnostic_context.rb:323:in `block in create_with_logging_context'
+E, [2014-02-18T08:15:17.081728 #26479] ERROR -- ubuntu-ubuntu-1204: ----------------------
+I, [2014-02-18T08:20:51.616435 #27084]  INFO -- ubuntu-ubuntu-1204: -----> Cleaning up any prior instances of <ubuntu-ubuntu-1204>
+I, [2014-02-18T08:20:51.617809 #27084]  INFO -- ubuntu-ubuntu-1204: -----> Destroying <ubuntu-ubuntu-1204>...
+I, [2014-02-18T08:20:58.879962 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-02-18T08:21:00.041329 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-02-18T08:21:00.538799 #27084]  INFO -- ubuntu-ubuntu-1204: Vagrant instance <ubuntu-ubuntu-1204> destroyed.
+I, [2014-02-18T08:21:00.556095 #27084]  INFO -- ubuntu-ubuntu-1204: Finished destroying <ubuntu-ubuntu-1204> (0m8.92s).
+I, [2014-02-18T08:21:00.557304 #27084]  INFO -- ubuntu-ubuntu-1204: -----> Testing <ubuntu-ubuntu-1204>
+I, [2014-02-18T08:21:00.557687 #27084]  INFO -- ubuntu-ubuntu-1204: -----> Creating <ubuntu-ubuntu-1204>...
+I, [2014-02-18T08:21:03.361278 #27084]  INFO -- ubuntu-ubuntu-1204: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2014-02-18T08:21:04.677407 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Importing base box 'opscode-ubuntu-12.04'...
+Progress: 20%Progress: 30%Progress: 40%Progress: 50%Progress: 60%Progress: 70%Progress: 80%Progress: 90%I, [2014-02-18T08:21:23.687008 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Matching MAC address for NAT networking...
+I, [2014-02-18T08:21:24.723137 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Setting the name of the VM...
+I, [2014-02-18T08:21:24.775717 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Clearing any previously set forwarded ports...
+I, [2014-02-18T08:21:24.868852 #27084]  INFO -- ubuntu-ubuntu-1204: [Berkshelf] Skipping Berkshelf with --no-provision
+I, [2014-02-18T08:21:26.168484 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Fixed port collision for 22 => 2222. Now on port 2203.
+I, [2014-02-18T08:21:26.214277 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Clearing any previously set network interfaces...
+I, [2014-02-18T08:21:26.264451 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Preparing network interfaces based on configuration...
+I, [2014-02-18T08:21:26.311805 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Forwarding ports...
+I, [2014-02-18T08:21:26.395353 #27084]  INFO -- ubuntu-ubuntu-1204: [default] -- 22 => 2203 (adapter 1)
+I, [2014-02-18T08:21:26.575488 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Running 'pre-boot' VM customizations...
+I, [2014-02-18T08:21:26.614992 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Booting VM...
+I, [2014-02-18T08:21:27.118391 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Waiting for machine to boot. This may take a few minutes...
+I, [2014-02-18T08:21:43.143910 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Machine booted and ready!
+I, [2014-02-18T08:21:43.181118 #27084]  INFO -- ubuntu-ubuntu-1204: [default] The guest additions on this VM do not match the installed version of
+I, [2014-02-18T08:21:43.181254 #27084]  INFO -- ubuntu-ubuntu-1204: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2014-02-18T08:21:43.181347 #27084]  INFO -- ubuntu-ubuntu-1204: prevent things such as shared folders from working properly. If you see
+I, [2014-02-18T08:21:43.181489 #27084]  INFO -- ubuntu-ubuntu-1204: shared folder errors, please make sure the guest additions within the
+I, [2014-02-18T08:21:43.181577 #27084]  INFO -- ubuntu-ubuntu-1204: virtual machine match the version of VirtualBox you have installed on
+I, [2014-02-18T08:21:43.181668 #27084]  INFO -- ubuntu-ubuntu-1204: your host and reload your VM.
+I, [2014-02-18T08:21:43.181753 #27084]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:21:43.181829 #27084]  INFO -- ubuntu-ubuntu-1204: Guest Additions Version: 4.1.22
+I, [2014-02-18T08:21:43.181879 #27084]  INFO -- ubuntu-ubuntu-1204: VirtualBox Version: 4.3
+I, [2014-02-18T08:21:43.182507 #27084]  INFO -- ubuntu-ubuntu-1204: [default] Setting hostname...
+I, [2014-02-18T08:21:51.775235 #27084]  INFO -- ubuntu-ubuntu-1204: Vagrant instance <ubuntu-ubuntu-1204> created.
+I, [2014-02-18T08:21:51.785581 #27084]  INFO -- ubuntu-ubuntu-1204: Finished creating <ubuntu-ubuntu-1204> (0m51.22s).
+I, [2014-02-18T08:21:51.786388 #27084]  INFO -- ubuntu-ubuntu-1204: -----> Converging <ubuntu-ubuntu-1204>...
+I, [2014-02-18T08:21:51.792123 #27084]  INFO -- ubuntu-ubuntu-1204: Preparing files for transfer
+I, [2014-02-18T08:21:51.885059 #27084]  INFO -- ubuntu-ubuntu-1204: Resolving cookbook dependencies with Berkshelf 2.0.14...
+I, [2014-02-18T08:21:55.714019 #27084]  INFO -- ubuntu-ubuntu-1204: Removing non-cookbook files before transfer
+I, [2014-02-18T08:21:55.848567 #27084]  INFO -- ubuntu-ubuntu-1204: Transfering files to <ubuntu-ubuntu-1204>
+[2014-02-18T16:21:54+00:00] INFO: *** Chef 10.14.4 ***I, [2014-02-18T08:21:57.612647 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:21:54+00:00] INFO: Setting the run_list to ["recipe[polipo_appliance::client_proxy]", "recipe[apt]"] from JSONI, [2014-02-18T08:21:58.151296 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:21:54+00:00] INFO: Run List is [recipe[polipo_appliance::client_proxy], recipe[apt]]I, [2014-02-18T08:21:58.152777 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:21:54+00:00] INFO: Run List expands to [polipo_appliance::client_proxy, apt]I, [2014-02-18T08:21:58.153352 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:21:54+00:00] INFO: Starting Chef Run for ubuntu-ubuntu-1204I, [2014-02-18T08:21:58.153928 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:21:54+00:00] INFO: Running start handlersI, [2014-02-18T08:21:58.154598 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:21:54+00:00] INFO: Start handlers complete.I, [2014-02-18T08:21:58.155033 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:21:54+00:00] INFO: Processing template[/etc/apt/apt.conf] action create (polipo_appliance::client_proxy line 32)I, [2014-02-18T08:21:58.182653 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:21:55+00:00] INFO: template[/etc/apt/apt.conf] updated contentI, [2014-02-18T08:21:58.273845 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:21:55+00:00] INFO: template[/etc/apt/apt.conf] mode changed to 644I, [2014-02-18T08:21:58.275141 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:21:55+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)I, [2014-02-18T08:21:58.275931 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise InReleaseI, [2014-02-18T08:22:02.693884 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-updates InReleaseI, [2014-02-18T08:22:02.694373 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports InReleaseI, [2014-02-18T08:22:02.821313 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise Release.gpgI, [2014-02-18T08:22:02.825189 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:1 http://us.archive.ubuntu.com precise-updates Release.gpg [198 B]I, [2014-02-18T08:22:02.946319 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:2 http://us.archive.ubuntu.com precise-backports Release.gpg [198 B]I, [2014-02-18T08:22:02.953460 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise ReleaseI, [2014-02-18T08:22:03.080547 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:3 http://us.archive.ubuntu.com precise-updates Release [49.6 kB]I, [2014-02-18T08:22:03.086313 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:4 http://us.archive.ubuntu.com precise-backports Release [49.6 kB]I, [2014-02-18T08:22:03.426744 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main SourcesI, [2014-02-18T08:22:03.610200 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted SourcesI, [2014-02-18T08:22:03.736671 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe SourcesI, [2014-02-18T08:22:03.877861 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse SourcesI, [2014-02-18T08:22:04.002515 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://security.ubuntu.com precise-security InReleaseI, [2014-02-18T08:22:04.114627 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main amd64 PackagesI, [2014-02-18T08:22:04.146103 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:5 http://security.ubuntu.com precise-security Release.gpg [198 B]I, [2014-02-18T08:22:04.216131 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted amd64 PackagesI, [2014-02-18T08:22:04.278546 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:6 http://security.ubuntu.com precise-security Release [49.6 kB]I, [2014-02-18T08:22:04.314143 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe amd64 PackagesI, [2014-02-18T08:22:04.422113 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse amd64 PackagesI, [2014-02-18T08:22:04.552906 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:7 http://security.ubuntu.com precise-security/main Sources [97.7 kB]I, [2014-02-18T08:22:04.621316 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main i386 PackagesI, [2014-02-18T08:22:04.696534 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted i386 PackagesI, [2014-02-18T08:22:04.840689 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:8 http://security.ubuntu.com precise-security/restricted Sources [2494 B]I, [2014-02-18T08:22:04.941558 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe i386 PackagesI, [2014-02-18T08:22:04.981805 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:9 http://security.ubuntu.com precise-security/universe Sources [30.9 kB]I, [2014-02-18T08:22:05.062281 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse i386 PackagesI, [2014-02-18T08:22:05.133450 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:10 http://security.ubuntu.com precise-security/multiverse Sources [1791 B]I, [2014-02-18T08:22:05.289609 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:11 http://security.ubuntu.com precise-security/main amd64 Packages [363 kB]I, [2014-02-18T08:22:05.290844 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main TranslationIndexI, [2014-02-18T08:22:05.295747 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:12 http://security.ubuntu.com precise-security/restricted amd64 Packages [4627 B]I, [2014-02-18T08:22:05.383321 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:13 http://security.ubuntu.com precise-security/universe amd64 Packages [90.9 kB]I, [2014-02-18T08:22:05.392222 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndexI, [2014-02-18T08:22:05.427539 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted TranslationIndexI, [2014-02-18T08:22:05.436078 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:14 http://security.ubuntu.com precise-security/multiverse amd64 Packages [2445 B]I, [2014-02-18T08:22:05.589058 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:15 http://security.ubuntu.com precise-security/main i386 Packages [387 kB]I, [2014-02-18T08:22:05.589498 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe TranslationIndexI, [2014-02-18T08:22:05.699605 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:16 http://us.archive.ubuntu.com precise-updates/main Sources [451 kB]I, [2014-02-18T08:22:05.708028 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:17 http://security.ubuntu.com precise-security/restricted i386 Packages [4620 B]I, [2014-02-18T08:22:06.149371 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:18 http://security.ubuntu.com precise-security/universe i386 Packages [95.4 kB]I, [2014-02-18T08:22:06.150545 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:19 http://security.ubuntu.com precise-security/multiverse i386 Packages [2639 B]I, [2014-02-18T08:22:06.172079 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:20 http://security.ubuntu.com precise-security/main TranslationIndex [74 B]I, [2014-02-18T08:22:06.173363 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:21 http://security.ubuntu.com precise-security/multiverse TranslationIndex [72 B]I, [2014-02-18T08:22:06.174921 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:22 http://security.ubuntu.com precise-security/restricted TranslationIndex [72 B]I, [2014-02-18T08:22:06.176474 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:23 http://security.ubuntu.com precise-security/universe TranslationIndex [73 B]I, [2014-02-18T08:22:06.178434 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:24 http://security.ubuntu.com precise-security/main Translation-en [169 kB]I, [2014-02-18T08:22:06.285375 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:25 http://security.ubuntu.com precise-security/multiverse Translation-en [1299 B]I, [2014-02-18T08:22:06.510706 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:26 http://security.ubuntu.com precise-security/restricted Translation-en [1253 B]I, [2014-02-18T08:22:06.512111 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:27 http://security.ubuntu.com precise-security/universe Translation-en [56.4 kB]I, [2014-02-18T08:22:06.610910 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:28 http://us.archive.ubuntu.com precise-updates/restricted Sources [8028 B]I, [2014-02-18T08:22:08.668792 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:29 http://us.archive.ubuntu.com precise-updates/universe Sources [104 kB]I, [2014-02-18T08:22:08.671541 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:30 http://us.archive.ubuntu.com precise-updates/multiverse Sources [8482 B]I, [2014-02-18T08:22:08.687929 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:31 http://us.archive.ubuntu.com precise-updates/main amd64 Packages [750 kB]I, [2014-02-18T08:22:08.693540 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:32 http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages [12.2 kB]I, [2014-02-18T08:22:10.281627 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:33 http://us.archive.ubuntu.com precise-updates/universe amd64 Packages [236 kB]I, [2014-02-18T08:22:10.288480 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:34 http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages [14.5 kB]I, [2014-02-18T08:22:10.328780 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:35 http://us.archive.ubuntu.com precise-updates/main i386 Packages [773 kB]I, [2014-02-18T08:22:10.329255 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:36 http://us.archive.ubuntu.com precise-updates/restricted i386 Packages [12.2 kB]I, [2014-02-18T08:22:10.417378 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:37 http://us.archive.ubuntu.com precise-updates/universe i386 Packages [241 kB]I, [2014-02-18T08:22:10.423047 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:38 http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages [14.7 kB]I, [2014-02-18T08:22:10.452548 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:39 http://us.archive.ubuntu.com precise-updates/main TranslationIndex [3564 B]I, [2014-02-18T08:22:10.454428 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:40 http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex [2605 B]I, [2014-02-18T08:22:10.456697 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:41 http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex [2461 B]I, [2014-02-18T08:22:10.458733 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:42 http://us.archive.ubuntu.com precise-updates/universe TranslationIndex [2850 B]I, [2014-02-18T08:22:10.460870 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:43 http://us.archive.ubuntu.com precise-backports/main Sources [4226 B]I, [2014-02-18T08:22:10.551234 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:44 http://us.archive.ubuntu.com precise-backports/restricted Sources [14 B]I, [2014-02-18T08:22:10.553125 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:45 http://us.archive.ubuntu.com precise-backports/universe Sources [36.4 kB]I, [2014-02-18T08:22:10.554257 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:46 http://us.archive.ubuntu.com precise-backports/multiverse Sources [5311 B]I, [2014-02-18T08:22:10.818135 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:47 http://us.archive.ubuntu.com precise-backports/main amd64 Packages [4806 B]I, [2014-02-18T08:22:10.819130 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:48 http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages [14 B]I, [2014-02-18T08:22:10.819780 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:49 http://us.archive.ubuntu.com precise-backports/universe amd64 Packages [37.9 kB]I, [2014-02-18T08:22:10.820202 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:50 http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages [5206 B]I, [2014-02-18T08:22:10.954713 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:51 http://us.archive.ubuntu.com precise-backports/main i386 Packages [4811 B]I, [2014-02-18T08:22:11.048514 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:52 http://us.archive.ubuntu.com precise-backports/restricted i386 Packages [14 B]I, [2014-02-18T08:22:11.050614 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:53 http://us.archive.ubuntu.com precise-backports/universe i386 Packages [37.7 kB]I, [2014-02-18T08:22:11.052250 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:54 http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages [5178 B]I, [2014-02-18T08:22:11.179560 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:55 http://us.archive.ubuntu.com precise-backports/main TranslationIndex [72 B]I, [2014-02-18T08:22:11.181778 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:56 http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex [72 B]I, [2014-02-18T08:22:11.184429 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:57 http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex [70 B]I, [2014-02-18T08:22:11.187014 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:58 http://us.archive.ubuntu.com precise-backports/universe TranslationIndex [73 B]I, [2014-02-18T08:22:11.190326 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main Translation-enI, [2014-02-18T08:22:11.217765 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-enI, [2014-02-18T08:22:11.706173 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted Translation-enI, [2014-02-18T08:22:11.774496 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe Translation-enI, [2014-02-18T08:22:12.053348 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:59 http://us.archive.ubuntu.com precise-updates/main Translation-en [336 kB]I, [2014-02-18T08:22:12.058319 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:60 http://us.archive.ubuntu.com precise-updates/multiverse Translation-en [8473 B]I, [2014-02-18T08:22:12.106655 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:61 http://us.archive.ubuntu.com precise-updates/restricted Translation-en [2988 B]I, [2014-02-18T08:22:12.107612 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:62 http://us.archive.ubuntu.com precise-updates/universe Translation-en [137 kB]I, [2014-02-18T08:22:12.239498 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:63 http://us.archive.ubuntu.com precise-backports/main Translation-en [4235 B]I, [2014-02-18T08:22:12.391010 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:64 http://us.archive.ubuntu.com precise-backports/multiverse Translation-en [4610 B]I, [2014-02-18T08:22:12.470576 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-enI, [2014-02-18T08:22:12.524252 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Get:65 http://us.archive.ubuntu.com precise-backports/universe Translation-en [27.7 kB]I, [2014-02-18T08:22:12.617307 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Fetched 4761 kB in 14s (330 kB/s)I, [2014-02-18T08:22:12.781360 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Reading package lists...I, [2014-02-18T08:22:16.781918 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:13+00:00] INFO: execute[apt-get-update] ran successfullyI, [2014-02-18T08:22:16.821750 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:13+00:00] INFO: Processing execute[apt-get update] action nothing (apt::default line 38)I, [2014-02-18T08:22:16.825021 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:13+00:00] INFO: Processing execute[apt-get autoremove] action nothing (apt::default line 46)I, [2014-02-18T08:22:16.825851 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:13+00:00] INFO: Processing execute[apt-get autoclean] action nothing (apt::default line 53)I, [2014-02-18T08:22:16.826609 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:13+00:00] INFO: Processing package[update-notifier-common] action install (apt::default line 60)I, [2014-02-18T08:22:16.827391 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:17+00:00] INFO: package[update-notifier-common] sending run action to execute[apt-get-update] (immediate)I, [2014-02-18T08:22:20.624083 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:17+00:00] INFO: Processing execute[apt-get-update] action run (apt::default line 30)I, [2014-02-18T08:22:20.624987 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise InReleaseI, [2014-02-18T08:22:20.801668 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://security.ubuntu.com precise-security InReleaseI, [2014-02-18T08:22:20.856621 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-updates InReleaseI, [2014-02-18T08:22:20.940235 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Ign http://us.archive.ubuntu.com precise-backports InReleaseI, [2014-02-18T08:22:20.941048 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security Release.gpgI, [2014-02-18T08:22:20.952246 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security ReleaseI, [2014-02-18T08:22:21.052823 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise Release.gpgI, [2014-02-18T08:22:21.077275 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main SourcesI, [2014-02-18T08:22:21.172606 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates Release.gpgI, [2014-02-18T08:22:21.215522 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted SourcesI, [2014-02-18T08:22:21.270047 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports Release.gpgI, [2014-02-18T08:22:21.348889 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe SourcesI, [2014-02-18T08:22:21.364661 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse SourcesI, [2014-02-18T08:22:21.371787 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main amd64 PackagesI, [2014-02-18T08:22:21.372855 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted amd64 PackagesI, [2014-02-18T08:22:21.373539 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe amd64 PackagesI, [2014-02-18T08:22:21.374253 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse amd64 PackagesI, [2014-02-18T08:22:21.461359 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main i386 PackagesI, [2014-02-18T08:22:21.462224 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted i386 PackagesI, [2014-02-18T08:22:21.462877 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe i386 PackagesI, [2014-02-18T08:22:21.463465 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse i386 PackagesI, [2014-02-18T08:22:21.463963 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise ReleaseI, [2014-02-18T08:22:21.486203 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main TranslationIndexI, [2014-02-18T08:22:21.493427 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse TranslationIndexI, [2014-02-18T08:22:21.602072 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted TranslationIndexI, [2014-02-18T08:22:21.602862 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe TranslationIndexI, [2014-02-18T08:22:21.603387 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates ReleaseI, [2014-02-18T08:22:21.628811 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/main Translation-enI, [2014-02-18T08:22:21.704730 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/multiverse Translation-enI, [2014-02-18T08:22:21.712098 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports ReleaseI, [2014-02-18T08:22:21.788624 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/restricted Translation-enI, [2014-02-18T08:22:21.800544 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://security.ubuntu.com precise-security/universe Translation-enI, [2014-02-18T08:22:21.896142 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main SourcesI, [2014-02-18T08:22:21.926264 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted SourcesI, [2014-02-18T08:22:21.928791 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe SourcesI, [2014-02-18T08:22:21.929673 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse SourcesI, [2014-02-18T08:22:21.930410 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main amd64 PackagesI, [2014-02-18T08:22:21.931011 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted amd64 PackagesI, [2014-02-18T08:22:22.065492 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe amd64 PackagesI, [2014-02-18T08:22:22.066580 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse amd64 PackagesI, [2014-02-18T08:22:22.067187 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main i386 PackagesI, [2014-02-18T08:22:22.067809 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted i386 PackagesI, [2014-02-18T08:22:22.207846 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe i386 PackagesI, [2014-02-18T08:22:22.209762 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse i386 PackagesI, [2014-02-18T08:22:22.210678 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main TranslationIndexI, [2014-02-18T08:22:22.211111 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndexI, [2014-02-18T08:22:22.342185 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted TranslationIndexI, [2014-02-18T08:22:22.343473 #27084]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:22:22.564664 #27084]  INFO -- ubuntu-ubuntu-1204: Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+I, [2014-02-18T08:22:22.564873 #27084]  INFO -- ubuntu-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/main Sources
+I, [2014-02-18T08:22:22.564979 #27084]  INFO -- ubuntu-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/restricted Sources
+I, [2014-02-18T08:22:22.565093 #27084]  INFO -- ubuntu-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/universe Sources
+I, [2014-02-18T08:22:22.565197 #27084]  INFO -- ubuntu-ubuntu-1204: Hit http://us.archive.ubuntu.com precise-updates/multiverse Sources
+Hit http://us.archive.ubuntu.com precise-updates/main amd64 PackagesI, [2014-02-18T08:22:22.624275 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted amd64 PackagesI, [2014-02-18T08:22:22.625080 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe amd64 PackagesI, [2014-02-18T08:22:22.625509 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse amd64 PackagesI, [2014-02-18T08:22:22.769556 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main i386 PackagesI, [2014-02-18T08:22:22.770485 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted i386 PackagesI, [2014-02-18T08:22:22.771016 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe i386 PackagesI, [2014-02-18T08:22:22.771501 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 PackagesI, [2014-02-18T08:22:22.907194 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndexI, [2014-02-18T08:22:22.909534 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndexI, [2014-02-18T08:22:22.910140 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndexI, [2014-02-18T08:22:23.063319 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndexI, [2014-02-18T08:22:23.064309 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main SourcesI, [2014-02-18T08:22:23.065005 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted SourcesI, [2014-02-18T08:22:23.065573 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe SourcesI, [2014-02-18T08:22:23.199210 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse SourcesI, [2014-02-18T08:22:23.202830 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main amd64 PackagesI, [2014-02-18T08:22:23.203802 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 PackagesI, [2014-02-18T08:22:23.204516 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe amd64 PackagesI, [2014-02-18T08:22:23.344457 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 PackagesI, [2014-02-18T08:22:23.345690 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main i386 PackagesI, [2014-02-18T08:22:23.346160 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted i386 PackagesI, [2014-02-18T08:22:23.346667 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe i386 PackagesI, [2014-02-18T08:22:23.480367 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 PackagesI, [2014-02-18T08:22:23.485736 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndexI, [2014-02-18T08:22:23.624494 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndexI, [2014-02-18T08:22:23.625669 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndexI, [2014-02-18T08:22:23.626295 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndexI, [2014-02-18T08:22:23.626844 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/main Translation-enI, [2014-02-18T08:22:23.629149 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/multiverse Translation-enI, [2014-02-18T08:22:23.629779 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/restricted Translation-enI, [2014-02-18T08:22:23.630267 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise/universe Translation-enI, [2014-02-18T08:22:23.630668 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/main Translation-enI, [2014-02-18T08:22:23.769311 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-enI, [2014-02-18T08:22:23.770007 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-enI, [2014-02-18T08:22:23.770676 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-updates/universe Translation-enI, [2014-02-18T08:22:23.771112 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/main Translation-enI, [2014-02-18T08:22:23.901987 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-enI, [2014-02-18T08:22:23.904535 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-enI, [2014-02-18T08:22:24.041271 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Hit http://us.archive.ubuntu.com precise-backports/universe Translation-enI, [2014-02-18T08:22:24.042040 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Reading package lists...I, [2014-02-18T08:22:26.883555 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: execute[apt-get-update] ran successfullyI, [2014-02-18T08:22:26.907014 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: Processing execute[apt-get-update-periodic] action run (apt::default line 65)I, [2014-02-18T08:22:26.907821 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: Processing directory[/var/cache/local] action create (apt::default line 76)I, [2014-02-18T08:22:26.909970 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: directory[/var/cache/local] created directory /var/cache/localI, [2014-02-18T08:22:26.914501 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: directory[/var/cache/local] owner changed to 0I, [2014-02-18T08:22:26.915556 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: directory[/var/cache/local] group changed to 0I, [2014-02-18T08:22:26.916494 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: directory[/var/cache/local] mode changed to 755I, [2014-02-18T08:22:26.917677 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: Processing directory[/var/cache/local/preseeding] action create (apt::default line 76)I, [2014-02-18T08:22:26.918387 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: directory[/var/cache/local/preseeding] created directory /var/cache/local/preseedingI, [2014-02-18T08:22:26.920500 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: directory[/var/cache/local/preseeding] owner changed to 0I, [2014-02-18T08:22:26.921275 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: directory[/var/cache/local/preseeding] group changed to 0I, [2014-02-18T08:22:26.922328 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: directory[/var/cache/local/preseeding] mode changed to 755I, [2014-02-18T08:22:26.923903 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: Chef Run complete in 28.769067849 secondsI, [2014-02-18T08:22:26.927450 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: Running report handlersI, [2014-02-18T08:22:26.931026 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[2014-02-18T16:22:23+00:00] INFO: Report handlers completeI, [2014-02-18T08:22:26.931747 #27084]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:22:27.098612 #27084]  INFO -- ubuntu-ubuntu-1204: Finished converging <ubuntu-ubuntu-1204> (0m35.28s).
+I, [2014-02-18T08:22:27.099430 #27084]  INFO -- ubuntu-ubuntu-1204: -----> Setting up <ubuntu-ubuntu-1204>...
+Fetching: thor-0.18.1.gemFetching: thor-0.18.1.gem (  9%)Fetching: thor-0.18.1.gem ( 11%)Fetching: thor-0.18.1.gem ( 18%)Fetching: thor-0.18.1.gem ( 21%)Fetching: thor-0.18.1.gem ( 25%)Fetching: thor-0.18.1.gem ( 27%)Fetching: thor-0.18.1.gem ( 39%)Fetching: thor-0.18.1.gem ( 42%)Fetching: thor-0.18.1.gem ( 44%)Fetching: thor-0.18.1.gem ( 53%)Fetching: thor-0.18.1.gem ( 54%)Fetching: thor-0.18.1.gem ( 56%)Fetching: thor-0.18.1.gem ( 58%)Fetching: thor-0.18.1.gem ( 64%)Fetching: thor-0.18.1.gem ( 76%)Fetching: thor-0.18.1.gem ( 78%)Fetching: thor-0.18.1.gem ( 81%)Fetching: thor-0.18.1.gem ( 85%)Fetching: thor-0.18.1.gem ( 88%)Fetching: thor-0.18.1.gem ( 90%)Fetching: thor-0.18.1.gem ( 91%)Fetching: thor-0.18.1.gem ( 95%)Fetching: thor-0.18.1.gem ( 97%)Fetching: thor-0.18.1.gem (100%)Fetching: thor-0.18.1.gem (100%)I, [2014-02-18T08:22:33.875172 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Fetching: busser-0.6.0.gemFetching: busser-0.6.0.gem ( 14%)Fetching: busser-0.6.0.gem ( 66%)Fetching: busser-0.6.0.gem (100%)Fetching: busser-0.6.0.gem (100%)I, [2014-02-18T08:22:34.128205 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Successfully installed thor-0.18.1I, [2014-02-18T08:22:34.155413 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Successfully installed busser-0.6.0I, [2014-02-18T08:22:34.156338 #27084]  INFO -- ubuntu-ubuntu-1204: 
+2 gems installedI, [2014-02-18T08:22:34.157008 #27084]  INFO -- ubuntu-ubuntu-1204: 
+-----> Setting up BusserI, [2014-02-18T08:22:34.497855 #27084]  INFO -- ubuntu-ubuntu-1204: 
+       Creating BUSSER_ROOT in /tmp/busserI, [2014-02-18T08:22:34.498720 #27084]  INFO -- ubuntu-ubuntu-1204: 
+       Creating busser binstubI, [2014-02-18T08:22:34.499516 #27084]  INFO -- ubuntu-ubuntu-1204: 
+       Plugin bats installed (version 0.1.0)I, [2014-02-18T08:22:37.544761 #27084]  INFO -- ubuntu-ubuntu-1204: 
+-----> Running postinstall for bats pluginI, [2014-02-18T08:22:37.550447 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[1m[32m      create[0m  /tmp/bats20140218-1538-u4e4vj/batsI, [2014-02-18T08:22:37.552538 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[1m[32m      create[0m  /tmp/bats20140218-1538-u4e4vj/bats.tar.gzI, [2014-02-18T08:22:39.617109 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Installed Bats to /tmp/busser/vendor/bats/bin/batsI, [2014-02-18T08:22:39.679128 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[1m[32m      remove[0m  /tmp/bats20140218-1538-u4e4vjI, [2014-02-18T08:22:39.680095 #27084]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:22:39.713159 #27084]  INFO -- ubuntu-ubuntu-1204: Finished setting up <ubuntu-ubuntu-1204> (0m12.61s).
+I, [2014-02-18T08:22:39.713747 #27084]  INFO -- ubuntu-ubuntu-1204: -----> Verifying <ubuntu-ubuntu-1204>...
+       Suite path directory /tmp/busser/suites does not exist, skipping.I, [2014-02-18T08:22:40.117348 #27084]  INFO -- ubuntu-ubuntu-1204: 
+Uploading /tmp/busser/suites/bats/ubuntu.bats (mode=0644)I, [2014-02-18T08:22:40.383563 #27084]  INFO -- ubuntu-ubuntu-1204: 
+-----> Running bats test suiteI, [2014-02-18T08:22:41.151708 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[1G   apt.conf should have proxy info in it[K[77G1/2[2G[1G ✓ apt.conf should have proxy info in it[KI, [2014-02-18T08:22:41.220146 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[0m[1G   apt-get should work[K[77G2/2[2G[1G ✓ apt-get should work[KI, [2014-02-18T08:22:44.601165 #27084]  INFO -- ubuntu-ubuntu-1204: 
+[0mI, [2014-02-18T08:22:44.601734 #27084]  INFO -- ubuntu-ubuntu-1204: 
+2 tests, 0 failuresI, [2014-02-18T08:22:44.602054 #27084]  INFO -- ubuntu-ubuntu-1204: 
+I, [2014-02-18T08:22:44.616973 #27084]  INFO -- ubuntu-ubuntu-1204: Finished verifying <ubuntu-ubuntu-1204> (0m4.90s).
+I, [2014-02-18T08:22:44.617215 #27084]  INFO -- ubuntu-ubuntu-1204: Finished testing <ubuntu-ubuntu-1204> (1m53.00s).
+I, [2014-02-18T08:29:47.573091 #27582]  INFO -- ubuntu-ubuntu-1204: -----> Destroying <ubuntu-ubuntu-1204>...
+I, [2014-02-18T08:29:55.306474 #27582]  INFO -- ubuntu-ubuntu-1204: [default] Forcing shutdown of VM...
+I, [2014-02-18T08:29:56.445492 #27582]  INFO -- ubuntu-ubuntu-1204: [default] Destroying VM and associated drives...
+I, [2014-02-18T08:29:56.852904 #27582]  INFO -- ubuntu-ubuntu-1204: Vagrant instance <ubuntu-ubuntu-1204> destroyed.
+I, [2014-02-18T08:29:56.870398 #27582]  INFO -- ubuntu-ubuntu-1204: Finished destroying <ubuntu-ubuntu-1204> (0m9.28s).

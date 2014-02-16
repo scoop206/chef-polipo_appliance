@@ -1,5 +1,4 @@
-Chef Polipo Appliance
---------------------
+# Chef Polipo Appliance
 
 [Polipo](http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/) is a "a small and fast caching web proxy"  
 
@@ -10,25 +9,21 @@ It is more convenient within a repo, and is even more convenient if you use it w
 
 Any chef clients with recipe\[polipo_appliance::client\_proxy\] in their run list will proxy their package downloads via the polipo appliance.  
 
-How much faster is it?
----------------------
+## How much faster is it?
 
 erlang install w/o caching:     83 sec  
 erlang install w/ primed cache: 28 sec
 
-Supported Platforms
--------------------
+## Supported Platforms
 
 The appliance is Ubuntu.  The client_proxy recipe works on the Debian and RHEL platorm families.  
 
-Requirements
-------------
+## Requirements
 
 Vagrant
 
 
-Attributes
-----------
+## Attributes
 
 **node["polipo_appliance"]["proxy_ipaddress"]**
 
@@ -38,18 +33,16 @@ The polipo proxy's ip address
 The IP ranges that the polipo appliance will provide caching for.  
 By default the 10.x.x.x and 192.168.x.x non-routable ranges are used.
 
-Recipes
---------
+## Recipes
 
 **polipo_appliance::default**  
 Installs polipo to your appliance VM.  
 
-
 **polipo_appliance::client\_proxy**  
 Configures yum or apt to use polipo for proxying
 
-Usage
------
+## Usage
+
 
 Get the cookbook
 
@@ -138,6 +131,16 @@ Contributing
 3. Write your change
 4. Run the tests
 6. Submit a Pull Request using Github
+
+Testing
+-------------------
+
+chef-polipo-appliance relies on the polipo-appliance cookbook.
+polipo_appliance::client_proxy will setup a client to use the polipo proxy.  It does this by modifying either the apt or yum conf to use the proxy IP address.
+
+( This logic needs to be broken out into it's own cookbook.  It shouldn't be in polipo-appliance.  It should be in another cookbook called something like chef-polipo)
+
+
 
 License and Authors
 -------------------

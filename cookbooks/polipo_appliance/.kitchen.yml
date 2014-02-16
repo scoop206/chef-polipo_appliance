@@ -1,36 +1,38 @@
 ---
 driver_plugin: vagrant
+driver_config:
+  require_chef_omnibus: true
+proxy: &proxy 192.168.0.23
 
 platforms:
 
 - name: ubuntu-12.04
   driver_config:
     box: opscode-ubuntu-12.04
-    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box
+    box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-12.04_chef-provisionerless.box
   run_list:
   - recipe[polipo_appliance::client_proxy]
   - recipe[apt]
   attributes:
     polipo_appliance:
-      proxy_ipaddress: 192.168.0.21
+      proxy_ipaddress: *proxy
   
-- name: centos-6.3
+- name: centos-6.5
   driver_config:
-    box: opscode-centos-6.3
-    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-centos-6.3.box
+    box: opscode-centos-6.5
+    box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box
   run_list:
   - recipe[polipo_appliance::client_proxy]
-  - recipe[yum::epel]
   attributes:
     polipo_appliance:
-      proxy_ipaddress: 192.168.0.21
+      proxy_ipaddress: *proxy
 
 suites:
 
 - name: ubuntu
   run_list: []
   excludes:
-  - centos-6.3
+  - centos-6.5
 
 - name: centos
   run_list: []

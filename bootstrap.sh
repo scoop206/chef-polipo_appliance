@@ -6,9 +6,8 @@ echo
 echo ">> starting up polipo appliance"
 echo 
 
-bundle install
-bundle exec vagrant destroy -f
-bundle exec vagrant up
+vagrant destroy -f
+vagrant up
 
 echo
 echo ">> polipo appliance ip address:"

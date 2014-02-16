@@ -1,7 +1,6 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'berkshelf'
-gem 'vagrant'
-gem 'jamie'
-gem 'jamie-vagrant'
+gem 'test-kitchen'
+gem 'kitchen-vagrant'
 
