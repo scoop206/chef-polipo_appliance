@@ -2,67 +2,14 @@
 
 [Polipo](http://www.pps.univ-paris-diderot.fr/~jch/software/polipo/) is a "a small and fast caching web proxy"  
 
-This is a chef cookbook that uses polipo to create an appliance VM for local caching of RPM and deb packages.  
-
-You can either use it standalone, or within a chef repository.  
-It is more convenient within a repo, and is even more convenient if you use it with [Jamie](http://github.com/jamie-ci). (Jamie has now been merged into test-kitchen)
-
-Any chef clients with recipe\[polipo_appliance::client\_proxy\] in their run list will proxy their package downloads via the polipo appliance.  
-
-## How much faster is it?
-
-erlang install w/o caching:     83 sec  
-erlang install w/ primed cache: 28 sec
-
-## Supported Platforms
-
-The appliance is Ubuntu.  The client_proxy recipe works on the Debian and RHEL platorm families.  
-
-## Requirements
-
-Vagrant
-
-
-## Attributes
-
-**node["polipo_appliance"]["proxy_ipaddress"]**
-
-The polipo proxy's ip address
-
-**node["polipo_appliance"]["allowed_clients]**  
-The IP ranges that the polipo appliance will provide caching for.  
-By default the 10.x.x.x and 192.168.x.x non-routable ranges are used.
-
-## Recipes
-
-**polipo_appliance::default**  
-Installs polipo to your appliance VM.  
-
-**polipo_appliance::client\_proxy**  
-Configures yum or apt to use polipo for proxying
+This is a vagrant appliance that uses polipo for local caching of RPM and deb packages.  
 
 ## Usage
 
-
 Get the cookbook
 
-either clone by hand to a cookbook folder:  
 ```bash
 git clone git@github.com:sandfish8/chef-polipo_appliance.git
-```
-
-or
-
-add a group entry to your Berksfile and vendor the cookbook  (recommended)  
-  
-```ruby
-group :polipo_appliance do
- cookbook 'polipo-appliance', :git => 'git://github.com/sandfish8/chef-polipo_appliance.git'
-end
-```
-
-```bash
-berks install -o polipo_appliance --path test/integration/cookbooks/
 ```
 
 Run the polipo appliance bootstrap script and record the appliance ipaddress it spits out.  The VM's network runs bridged so you may get asked by Vagrant which network you'd like to bridge to.
@@ -76,13 +23,12 @@ cd test/integration/cookbooks/polipo_appliance
 ```
 
 Place the polipo appliance information where your chef clients can get to it.  
-This can be accomplished with either Jamie or Vagrant
 
 Each proxy client needs  
  - recipe["polipo_appliance"]["proxy\_client"] at the top of their run list
  - node["polipo-appliance"]["proxy\_ipaddress"] set to the ip of the appliance.
 
-An example .jamie.yml configuraiton
+An example .kitchen.yml configuraiton
 
 ```yaml
 ---
@@ -112,19 +58,47 @@ suites:
 
 Fire up your test VMs and they should now be using the polipo appliance for caching.
 
-Troubleshooting
----------------
+## How much faster is it?
+
+erlang install w/o caching:     83 sec  
+erlang install w/ primed cache: 28 sec
+
+## Supported Platforms
+
+The appliance is Ubuntu.  The client_proxy recipe works on the Debian and RHEL platorm families.  
+
+## Requirements
+
+Vagrant 1.1+
+
+## Attributes
+
+**node["polipo_appliance"]["proxy_ipaddress"]**
+
+The polipo proxy's ip address
+
+**node["polipo_appliance"]["allowed_clients]**  
+The IP ranges that the polipo appliance will provide caching for.  
+By default the 10.x.x.x and 192.168.x.x non-routable ranges are used.
+
+## Recipes
+
+**polipo_appliance::default**  
+Installs polipo to your appliance VM.  
+
+**polipo_appliance::client\_proxy**  
+Configures yum or apt to use polipo for proxying
+
+## Troubleshooting
 
 Since polipo is an HTTP proxy you can test the appliance using your browser.  Use your appliance's IP and target port 8123.
 
-Testing
--------
+## Testing
 ```bash
 rake test
 ```
 
-Contributing
-------------
+## Contributing
 
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
